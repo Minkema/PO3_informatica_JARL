@@ -1,0 +1,49 @@
+<mxfile host="Electron" modified="2023-09-04T07:27:33.457Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="PqBUqOTrEz8OHoo1EfLC" version="21.1.2" type="device">
+  <diagram name="Page-1" id="Rwr1rKaPge3JT9x_Ef0W">
+    <mxGraphModel dx="1036" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Oj9YkA019jmnHk_8ZjTG-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="150" width="439" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Oj9YkA019jmnHk_8ZjTG-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="40" width="439" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Oj9YkA019jmnHk_8ZjTG-12" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&amp;nbsp;Berekeningen&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="210" y="50" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Oj9YkA019jmnHk_8ZjTG-13" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Gezondheid&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="369.5" y="50" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Oj9YkA019jmnHk_8ZjTG-14" value="over ons" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="50" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Oj9YkA019jmnHk_8ZjTG-15" value="" style="triangle;whiteSpace=wrap;html=1;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="295" y="60" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Oj9YkA019jmnHk_8ZjTG-16" value="" style="triangle;whiteSpace=wrap;html=1;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="453" y="60" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Oj9YkA019jmnHk_8ZjTG-18" value="Sportvideo&#39;s" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="369.5" y="80" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Oj9YkA019jmnHk_8ZjTG-19" value="Sportmeter" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="100" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Oj9YkA019jmnHk_8ZjTG-20" value="Calorieënteller" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="80" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Oj9YkA019jmnHk_8ZjTG-21" value="Schijf van vijf" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="369.5" y="100" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Oj9YkA019jmnHk_8ZjTG-25" value="Bmi berekening" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="120" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Oj9YkA019jmnHk_8ZjTG-26" value="Voedingstips" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="369.5" y="120" width="100" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
