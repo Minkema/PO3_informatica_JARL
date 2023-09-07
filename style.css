@@ -1,1 +1,21 @@
+body{
+    margin: 0%;
+}
 
+/*gives the navigationbar the right shape and colours*/
+.NavBar{
+    text-align: center;
+    padding: 0.5%;
+    font-size: 200%;
+    background-color: rgb(255, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*gives the items in the navigationbar the right shape and colours*/
+.MenuItem{
+    background-color: yellow;
+    margin: auto;
+    padding: 1.5%;
+    border-style: solid;
+}
