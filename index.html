@@ -2,12 +2,49 @@
 <html lang="en">
 
   <head>
-    <link rel="stylesheet" type="text/css" rel="style.css">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Fitness webapp</title>
+    
+    <script type="text/javascript">
+
+      //defining variables
+      var BerekeningenContent = document.getElementsByClassName("")
+
+      //function to dropdown the contents of the dropdown menu
+      function DropDownBerekening(){
+        console.log("Function called")
+        if (BerekeningenContent.style.display == "none;"){
+          BerekeningenContent.style.display = "initial;";
+        }
+        else{
+          BerekeningenContent.style.display = "none;"
+        }
+      }
+    </script>
+
   </head>
 
   <body>
     
+    <!--this is the bar with all the dropdown menu's-->
+    <div class="NavBar">
+
+      <article class="MenuItem" id="BerekeningenDropdown" onclick="DropDownBerekening()">
+
+        Berekeningen&#x25BC; <br>
+        <article style="display: none;" class="DropdownContentBerekeningen">Calorieteller</article>
+        <article style="display: none;" class="DropdownContentBerekeningen">Sportmeter</article>
+        <article style="display: none;" class="DropdownContentBerekeningen">BMI berekenaar</article>
+
+      </article>
+
+      <article class="MenuItem" id="GezondheidDropdown">Gezondheid&#x25BC;</article>
+
+      <article class="MenuItem" id="OverOns">Over Ons</article>
+
+    </div>
+
   </body>
 
 </html>
