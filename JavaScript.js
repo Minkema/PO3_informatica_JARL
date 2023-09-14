@@ -11,3 +11,23 @@
           BerekeningenContent.style.display = "none;"
         }
       }
+      function BMIberekenFunction() {
+        var length = document.getElementById("length").value;
+        var weigth = document.getElementById("weigth").value;
+            
+        if (length < 65) {
+                length=NaN
+        }
+        else if  (length > 252){
+                length=NaN
+        }
+        else if (weigth > 595){
+                weigth=NaN
+        }
+        else if (weigth < 0){
+                weigth=NaN
+        }
+        else {
+        document.getElementById ("result").value = ((weigth / (length*length))*10000);
+        }
+      }
