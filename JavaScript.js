@@ -16,19 +16,23 @@ function BMIberekenFunction() {
   var weigth = document.getElementById("weigth").value;
           
   if (length < 65) {
-    length=NaN
+    length=false
   }
   else if  (length > 252){
-    length=NaN
+    length=false
   }
   else if (weigth > 595){
-    weigth=NaN
+    weigth=false
   }
   else if (weigth < 0){
-    weigth=NaN
+    weigth=false
   }
-  else {
+
+  if (weigth != false && length != false){
     var BMI = ((weigth / (length*length))*10000)
     document.getElementById ("result").innerHTML = ("BMI = "+ String(BMI.toFixed(2)));
+  }
+  else{
+    document.getElementById ("result").innerHTML = ("Voer geldige waardes in!");
   }
 }
