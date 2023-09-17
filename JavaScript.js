@@ -20,13 +20,13 @@ function BMIberekenFunction() {
   if (length < 65) {
     length=false
   }
-  else if  (length > 252){
+  else if  (length > 251){
     length=false
   }
-  else if (weigth > 595){
+  else if (weigth > 727){
     weigth=false
   }
-  else if (weigth < 0){
+  else if (weigth < 0.212){
     weigth=false
   }
 
