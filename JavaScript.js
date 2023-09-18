@@ -14,25 +14,25 @@ function DropDownBerekening(){
 //Function to define and use the 2 given variables for the formula
 function BMIberekenFunction() {
   var length = document.getElementById("length").value;
-  var weigth = document.getElementById("weigth").value;
+  var weight = document.getElementById("weight").value;
 
-  // Here we chose to give a fail message when an invalid length of weigth is given
+  // Here we chose to give a fail message when an invalid length and/or weigth is given
   if (length < 65) {
     length=false
   }
   else if  (length > 251){
     length=false
   }
-  else if (weigth > 727){
-    weigth=false
+  else if (weight > 727){
+    weight=false
   }
-  else if (weigth < 0.212){
-    weigth=false
+  else if (weight < 0.212){
+    weight=false
   }
 
   //Function to calcualte result
-  if (weigth != false && length != false){
-    var BMI = ((weigth / (length*length))*10000)
+  if (weight != false && length != false){
+    var BMI = ((weight / (length*length))*10000)
     document.getElementById ("result").innerHTML = ("BMI = "+ String(BMI.toFixed(2)));
   }
   else{
