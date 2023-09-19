@@ -14,29 +14,42 @@
     <!--this is the bar with all the dropdown menu's-->
     <div class="NavBar">
 
-      <article class="MenuItem" id="BerekeningenDropdown" onclick="DropDownBerekening()">
-
-        Berekeningen&#x25BC; <br>
-        <article style="display: none;" class="DropdownContentBerekeningen">Calorieteller</article>
-        <article style="display: none;" class="DropdownContentBerekeningen">Sportmeter</article>
-        <article style="display: none;" class="DropdownContentBerekeningen">BMI berekenaar</article>
-
+      <article class="MenuItem" id="MenuBerekeningen" onclick="ShowBerekening()">
+        Berekeningen
       </article>
       
-      <article class="MenuItem" id="GezondheidDropdown">Gezondheid&#x25BC;</article>
+      <article class="MenuItem" id="MenuGezondheid">
+        Gezondheid
+      </article>
 
-      <article class="MenuItem" id="OverOns">Over Ons</article>
+      <article class="MenuItem" id="MenuOverOns">
+        Over Ons
+      </article>
 
     </div>
+
+    <!--This is the image that will be our homepage-->
+    <div id="HomePage">
+      <img src="Foto's/TempHomeScreen.jpg" width="100%">
+    </div>
+
+    <!--Thiss div contains the entire BMI calculator-->
+    <div id="BMIDiv" style="display: none;">
+
       <h1><b>BMI berekenen</b></h1>
+
       <!--This is the place where to put the length en weigth variables, also known as the input-->
       <p>Lengte in cm: <input type="number" id="length"><br><br></p>
       <p>Gewicht in kg: <input type="number" id="weight"><br><br></p>
 
       <!--This is the button with the function to calculate the BMI-->
       <button id="BMIcalc" onclick="BMIberekenFunction()">Berekenen</button><br><br>
+
       <!--This is the text label with the final result (the BMI), editing is not available (disabled)-->
-      <input type="text" id="result" disabled>
+      <p id="result">BMI = </p>
+
+    </div>
+      
   </body>
 
 </html>
