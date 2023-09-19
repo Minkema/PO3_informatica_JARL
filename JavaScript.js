@@ -1,18 +1,12 @@
-//defining variables
-var BerekeningenContent = document.getElementsByClassName("")
-
 //function to dropdown the contents of the dropdown menu
-function DropDownBerekening(){
-  console.log("Function called")
-  if (BerekeningenContent.style.display == "none;"){
-    BerekeningenContent.style.display = "initial;";
-  }
-  else{
-    BerekeningenContent.style.display = "none;"
-  }
+function ShowBerekening(){
+  console.log("started showing berekeningen")
+  document.getElementById("BMIDiv").style.display = "block"
+  document.getElementById("HomePage").style.display = "none"
 }
 //Function to define and use the 2 given variables for the formula
 function BMIberekenFunction() {
+  console.log("BMI is being calculated")
   var length = document.getElementById("length").value;
   var weight = document.getElementById("weight").value;
 
@@ -29,9 +23,13 @@ function BMIberekenFunction() {
   else if (weight < 0.212){
     weight=false
   }
+  else{
+    console.log("length and weight are valid")
+  }
 
   //Function to calcualte result
   if (weight != false && length != false){
+    console.log("Calculation started")
     var BMI = ((weight / (length*length))*10000)
     document.getElementById ("result").innerHTML = ("BMI = "+ String(BMI.toFixed(2)));
   }
