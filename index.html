@@ -51,5 +51,134 @@
     </div>
       
   </body>
+  <head>
+        <title>JS Testing</title>
+        <link rel= "stylesheet" type="text/css" href="style.css"> </link>
+        <script src="JavaScript.js"></script>
+        <meta charset=”utf-8”>
+    </head>
+    <body>
+            <h1><b>BMI berekenen</b></h1>
+                <p>Lengte in cm: <input type="number" id="length"><br><br></p>
+                <p>Gewicht in kg: <input type="number" id="weigth"><br><br></p>
+                <button id="BMIcalc" onclick="BMIberekenFunction()">Berekenen</button><br><br>
+                <input type="text" id="result" disabled>
+
+            <h1><b>Calorie teller</b></h1>
+            <p style="display: none;" id="run-p"> Minutes running:          <input type="number" class="calcValue" alt="12"></p>
+            <p style="display: none;" id="walk-p"> Minutes walking:         <input type="number" class="calcValue" alt="4"></p>
+            <p style="display: none;" id="swim-p"> Minutes swimming:        <input type="number" class="calcValue" alt="8"></p>
+            <p style="display: none;" id="cycle-p"> Minutes cycling:        <input type="number" class="calcValue" alt="7"></p>
+            <p style="display: none;" id="foot-p"> Minutes football         <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="golf-p"> Minutes golf             <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="basket-p"> Minutes basketball     <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="volley-p"> Minutes volleyball     <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="korf-p"> Minutes korfball         <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="hockey-p"> Minutes hockey         <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="badminton-p"> Minutes badminton   <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="tennis-p"> Minutes tennis         <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="padel-p"> Minutes padellen        <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="squash-p"> Minutes squash         <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="table-p"> Minutes tafeltennis     <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="box-p"> Minutes boxing            <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="wrestle-p"> Minutes wrestling     <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="judo-p"> Minutes judo             <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="yoga-p"> Minutes yoga             <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="sauna-p"> Minutes sauna           <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="chess-p"> Minutes chess           <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="check-p"> Minutes checkers        <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="polo-p"> Minutes waterpolo        <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="bow-p"> Minutes archery           <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="bowl-p"> Minutes bowling          <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="dart-p"> Minutes darts            <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="shoot-p"> Minutes shooting        <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="climb-p"> Minutes climbing        <input type="number" class="calcValue" alt=""></p>
+            <p style="display: none;" id="frisbee-p"> Minutes frisbee       <input type="number" class="calcValue" alt=""></p>
+
+            
+            <p>&nbsp;</p>
+            <button id="CALcalc" onclick="CALcalcFunction()">Berekenen</button><br><br>
+            <p>Calories burnt:<input type="text" id="resultCAL" disabled></p><br><br>
+
+
+
+
+            <h1>Activity options</h1>
+            <select name="aoCAL" id="selAct" onchange="selAct()" required>
+                <option value="divBall"         id="aoBall">Ballsports</option>
+                <option value="divRacket"       id="aoRack">Racketsports</option>
+                <option value="divFight"        id="aoFight">Fightsports</option>
+                <option value="divWell"         id="aoMaW">Mind and wellness</option>
+                <option value="divMind"         id="aoMind">Mindsports</option>
+                <option value="divWater"        id="aoSea">Watersports</option>
+                <option value="divSpare"        id="aoST">Spare time</option>
+                <option value="divPrecision"    id="aoPrec">Precision sports</option>
+            </select>
+            <form>
+                <div>
+                    <div style="display: none;" id="divBall" class="divActivity">
+                        <label><h3><b>Ballsports:</b></h3>
+                        <input type="checkbox" onclick="unhide('foot-p')"       class="Ballsports"> Football
+                        <input type="checkbox" onclick="unhide('golf-p')"       class="Ballsports"> Golf
+                        <input type="checkbox" onclick="unhide('basket-p')"     class="Ballsports"> Basketball
+                        <input type="checkbox" onclick="unhide('volley-p')"     class="Ballsports"> Volleyball
+                        <input type="checkbox" onclick="unhide('korf-p')"       class="Ballsports"> Korfball
+                        <input type="checkbox" onclick="unhide('hockey-p')"     class="Ballsports"> Hockey
+                    </label>
+                    </div>
+                    <div style="display: none;" id="divRacket" class="divActivity">
+                    <label><h3><b>Racketsports:</b></h3>
+                        <input type="checkbox" onclick="unhide('badminton-p')"  class="Activity">Badminton&nbsp;&nbsp;
+                        <input type="checkbox" onclick="unhide('tennis-p')"     class="Activity">Tennis&nbsp;&nbsp;
+                        <input type="checkbox" onclick="unhide('padel-p')"      class="Activity">Padellen&nbsp;&nbsp;
+                        <input type="checkbox" onclick="unhide('squash-p')"     class="Activity">Squash&nbsp;&nbsp;
+                        <input type="checkbox" onclick="unhide('table-p')"      class="Activity">Tabletennis&nbsp;&nbsp;
+                    </label>
+                    </div>
+                    <div style="display: none;" id="divFight" class="divActivity">
+                    <label><h3><b>Fightsports:</b></h3>
+                        <input type="checkbox" onclick="unhide('box-p')"        class="Activity">Boxing&nbsp;&nbsp;
+                        <input type="checkbox" onclick="unhide('wrestle-p')"    class="Activity">Wrestling&nbsp;&nbsp;
+                        <input type="checkbox" onclick="unhide('judo-p')"       class="Activity">Judo&nbsp;&nbsp;
+                    </label>
+                    </div>
+                    <div style="display: none;" id="divWell" class="divActivity">
+                    <label><h3><b>Mind and wellness:</b></h3>
+                        <input type="checkbox" onclick="unhide('yoga-p')"       class="Activity">Yoga&nbsp;&nbsp;
+                        <input type="checkbox" onclick="unhide('sauna-p')"      class="Activity">Sauna&nbsp;&nbsp;
+                    </label>
+                    </div>
+                    <div style="display: none;" id="divMind" class="divActivity">
+                    <label><h3><b>Mindsports:</b></h3>
+                        <input type="checkbox" onclick="unhide('chess-p')"      class="Activity">Chess&nbsp;&nbsp;
+                        <input type="checkbox" onclick="unhide('check-p')"      class="Activity">Checkers&nbsp;&nbsp;
+                    </label>
+                    </div>
+                    <div style="display: none;" id="divWater" class="divActivity">
+                    <label><h3><b>Watersports:</b></h3> 
+                        <input type="checkbox" onclick="unhide('swim-p')"       class="Activity">Swimming&nbsp;&nbsp;
+                        <input type="checkbox" onclick="unhide('polo-p')"       class="Activity">Waterpolo&nbsp;&nbsp;
+                    </label>
+                    </div>
+                    <div style="display: none;" id="divSpare" class="divActivity">
+                    <label><h3><b>Spare time:</b></h3>
+                        <input type="checkbox" onclick="unhide('run-p')"        class="Activity">Running&nbsp;&nbsp;
+                        <input type="checkbox" onclick="unhide('walk-p')"       class="Activity">Walking&nbsp;&nbsp;
+                    </label>
+                    </div>
+                    <div style="display: none;" id="divPrecision" class="divActivity">
+                    <label><h3><b>Precision sports:</b></h3>
+                        <input type="checkbox" onclick="unhide('bow-p')"        class="Activity">Bowshooting&nbsp;&nbsp;
+                        <input type="checkbox" onclick="unhide('bowl-p')"       class="Activity">Bowling&nbsp;&nbsp;
+                        <input type="checkbox" onclick="unhide('dart-p')"       class="Activity">Darts&nbsp;&nbsp;
+                        <input type="checkbox" onclick="unhide('shoot-p')"      class="Activity">Shooting&nbsp;&nbsp;
+                        <input type="checkbox" onclick="unhide('climb-p')"      class="Activity">Climbing&nbsp;&nbsp;
+                        <input type="checkbox" onclick="unhide('frisbee-p')"    class="Activity">Frisbee&nbsp;&nbsp;
+                    </label>
+                    </div>
+                </div>
+            </form>
+
+    </body>
 
 </html>
