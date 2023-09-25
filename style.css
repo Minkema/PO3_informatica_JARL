@@ -1,47 +1,61 @@
-/*Colour pallete = https://colorhunt.co/palette/94a684aec3aee4e4d0ffeef4*/
-
 body{
     margin: 0%;
-    background-color: #AEC3AE;
+    background-color: #CEE5D0;
 }
 
 /*gives the navigationbar the right shape and colours*/
 .NavBar{
     text-align: center;
     padding: 0.5%;
-    font-size: 200%;
-    background-color: #94A684;
+    font-size: 250%;
+    background-color: #94B49F;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 /*gives the items in the navigationbar the right shape and colours*/
 .MenuItem{
-    background-color: #AEC3AE;
     margin: auto;
     padding: 1.5% 10% 1.5% 10%;
-    border-style: solid;
+    border: solid transparent;
+    border-width: 0.5px;
     cursor: pointer;
+    transition-duration: 100ms;
 }
 
 .MenuItem:hover{
-    background-color: #8daa8d;
+    border: solid;
+    border-left-color: #94B49F;
+    border-right-color: #94B49F;
+    transition-duration: 100ms;
 }
 
 #BMIDiv{
-    background-color: #E4E4D0;
+    background-color: #fdd3b9;
     margin: 5%;
     padding: 1%;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 0.5px;
 }
 
 #CalorieCounter{
-    background-color: #E4E4D0;
+    background-color: #fdd3b9;
     margin: 5%;
     padding: 1%;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 0.5px;
 }
 
 #Calculations{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+#MinutesMenu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
 }
