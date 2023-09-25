@@ -2,8 +2,11 @@
 function ShowBerekening(){
   console.log("started showing berekeningen")
   document.getElementById("BMIDiv").style.display = "block"
+  document.getElementById("CalorieCounter").style.display = "block"
   document.getElementById("HomePage").style.display = "none"
 }
+
+
 //Function to define and use the 2 given variables for the formula
 function BMIberekenFunction() {
   console.log("BMI is being calculated")
