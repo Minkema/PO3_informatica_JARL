@@ -1,9 +1,23 @@
 //function to dropdown the contents of the dropdown menu
 function ShowBerekening(){
-  console.log("started showing berekeningen")
-  document.getElementById("BMIDiv").style.display = "block"
-  document.getElementById("CalorieCounter").style.display = "block"
+  document.getElementById("Calculations").style.display = "block"
   document.getElementById("HomePage").style.display = "none"
+  document.getElementById("OverOns").style.display = "none"
+  document.getElementById("Gezondheid").style.display = "none"
+}
+
+function ShowGezondheid(){
+  document.getElementById("Calculations").style.display = "none"
+  document.getElementById("HomePage").style.display = "none"
+  document.getElementById("OverOns").style.display = "none"
+  document.getElementById("Gezondheid").style.display = "block"
+}
+
+function ShowOverOns(){
+  document.getElementById("Calculations").style.display = "none"
+  document.getElementById("HomePage").style.display = "none"
+  document.getElementById("OverOns").style.display = "block"
+  document.getElementById("Gezondheid").style.display = "none"
 }
 
 
