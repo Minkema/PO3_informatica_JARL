@@ -97,3 +97,24 @@ function selAct() {
         document.getElementById(subActivity).style.display = "block";
     }
 }
+
+function goCalculator() {
+  var ingredient = document.getElementById("CalorieGain")
+  var calc = document.getElementById("GainCalculator")
+  if (calc.style.display === "none") {
+      calc.style.display = "block";
+      ingredient.style.display = "none";
+  } else {
+    calc.style.display = "none";
+    ingredient.style.display = "block";
+  }
+}
+
+function CalcGain() {
+  let total = 0;
+  let elements = document.getElementsByClassName("calcGain");
+  Array.from(elements).forEach((htmlElement) => {
+    total += CalcValue(htmlElement.value, htmlElement.alt)
+  })
+  document.getElementById("resultGAIN").value = (String(total.toFixed(2)));
+}
