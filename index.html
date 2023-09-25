@@ -60,6 +60,7 @@
 
         <h2>Activity options</h2>
         <select name="aoCAL" id="selAct" onchange="selAct()" required>
+          <option disabled selected value> -- select an option -- </option>
           <option value="divBall"         id="aoBall">Ballsports</option>
           <option value="divRacket"       id="aoRack">Racketsports</option>
           <option value="divFight"        id="aoFight">Fightsports</option>
@@ -134,42 +135,44 @@
           </div>
         </form>
 
-        <p style="display: none;" id="run-p"> Minutes running:          <input type="number" class="calcValue" alt="12"></p>
-        <p style="display: none;" id="walk-p"> Minutes walking:         <input type="number" class="calcValue" alt="4"></p>
-        <p style="display: none;" id="swim-p"> Minutes swimming:        <input type="number" class="calcValue" alt="8"></p>
-        <p style="display: none;" id="cycle-p"> Minutes cycling:        <input type="number" class="calcValue" alt="7"></p>
-        <p style="display: none;" id="foot-p"> Minutes football         <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="golf-p"> Minutes golf             <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="basket-p"> Minutes basketball     <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="volley-p"> Minutes volleyball     <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="korf-p"> Minutes korfball         <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="hockey-p"> Minutes hockey         <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="badminton-p"> Minutes badminton   <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="tennis-p"> Minutes tennis         <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="padel-p"> Minutes padellen        <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="squash-p"> Minutes squash         <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="table-p"> Minutes tafeltennis     <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="box-p"> Minutes boxing            <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="wrestle-p"> Minutes wrestling     <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="judo-p"> Minutes judo             <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="yoga-p"> Minutes yoga             <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="sauna-p"> Minutes sauna           <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="chess-p"> Minutes chess           <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="check-p"> Minutes checkers        <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="polo-p"> Minutes waterpolo        <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="bow-p"> Minutes archery           <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="bowl-p"> Minutes bowling          <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="dart-p"> Minutes darts            <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="shoot-p"> Minutes shooting        <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="climb-p"> Minutes climbing        <input type="number" class="calcValue" alt=""></p>
-        <p style="display: none;" id="frisbee-p"> Minutes frisbee       <input type="number" class="calcValue" alt=""></p>
-            
+        <div id="MinutesMenu">
+          <p style="display: none;" id="run-p"> Minutes running:          <input type="number" class="calcValue" alt="12"></p>
+          <p style="display: none;" id="walk-p"> Minutes walking:         <input type="number" class="calcValue" alt="4"></p>
+          <p style="display: none;" id="swim-p"> Minutes swimming:        <input type="number" class="calcValue" alt="8"></p>
+          <p style="display: none;" id="cycle-p"> Minutes cycling:        <input type="number" class="calcValue" alt="7"></p>
+          <p style="display: none;" id="foot-p"> Minutes football         <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="golf-p"> Minutes golf             <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="basket-p"> Minutes basketball     <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="volley-p"> Minutes volleyball     <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="korf-p"> Minutes korfball         <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="hockey-p"> Minutes hockey         <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="badminton-p"> Minutes badminton   <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="tennis-p"> Minutes tennis         <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="padel-p"> Minutes padellen        <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="squash-p"> Minutes squash         <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="table-p"> Minutes tafeltennis     <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="box-p"> Minutes boxing            <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="wrestle-p"> Minutes wrestling     <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="judo-p"> Minutes judo             <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="yoga-p"> Minutes yoga             <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="sauna-p"> Minutes sauna           <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="chess-p"> Minutes chess           <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="check-p"> Minutes checkers        <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="polo-p"> Minutes waterpolo        <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="bow-p"> Minutes archery           <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="bowl-p"> Minutes bowling          <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="dart-p"> Minutes darts            <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="shoot-p"> Minutes shooting        <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="climb-p"> Minutes climbing        <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="frisbee-p"> Minutes frisbee       <input type="number" class="calcValue" alt=""></p>
+        </div>
+        
         <p>&nbsp;</p>
         <button id="CALcalc" onclick="CALcalcFunction()">Berekenen</button><br><br>
         <p>Calories burnt:<input type="text" id="resultCAL" disabled></p><br><br>
       </div>
     </div>
-    
+
     <!--this div contains the "gezondheid" option-->
     <div id="gezondheid">
 
