@@ -1,5 +1,8 @@
+/*Colour pallete = https://colorhunt.co/palette/94a684aec3aee4e4d0ffeef4*/
+
 body{
     margin: 0%;
+    background-color: #AEC3AE;
 }
 
 /*gives the navigationbar the right shape and colours*/
@@ -7,16 +10,38 @@ body{
     text-align: center;
     padding: 0.5%;
     font-size: 200%;
-    background-color: rgb(255, 0, 0);
+    background-color: #94A684;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 /*gives the items in the navigationbar the right shape and colours*/
 .MenuItem{
-    background-color: yellow;
+    background-color: #AEC3AE;
     margin: auto;
-    padding: 1.5%;
+    padding: 1.5% 10% 1.5% 10%;
     border-style: solid;
     cursor: pointer;
+}
+
+.MenuItem:hover{
+    background-color: #8daa8d;
+}
+
+#BMIDiv{
+    background-color: #E4E4D0;
+    margin: 5%;
+    padding: 1%;
+}
+
+#CalorieCounter{
+    background-color: #E4E4D0;
+    margin: 5%;
+    padding: 1%;
+}
+
+#Calculations{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
