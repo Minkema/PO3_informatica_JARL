@@ -1,6 +1,6 @@
 //function to dropdown the contents of the dropdown menu
 function ShowBerekening(){
-  document.getElementById("Calculations").style.display = "block"
+  document.getElementById("Calculations").style.display = "grid"
   document.getElementById("HomePage").style.display = "none"
   document.getElementById("OverOns").style.display = "none"
   document.getElementById("Gezondheid").style.display = "none"
