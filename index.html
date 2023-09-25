@@ -20,11 +20,11 @@
       Berekeningen
     </article>
 
-    <article class="MenuItem" id="MenuGezondheid">
+    <article class="MenuItem" id="MenuGezondheid " onclick="ShowGezondheid()">
       Gezondheid
     </article>
 
-    <article class="MenuItem" id="MenuOverOns">
+    <article class="MenuItem" id="MenuOverOns" onclick="ShowOverOns()">
       Over Ons
     </article>
 
@@ -36,12 +36,12 @@
   </div>
 
   <!--This div contains the entire Calculations section-->
-  <div id="Calculations">
+  <div id="Calculations" style="display: none;">
     <!--This div contains the entire BMI calculator-->
     <div id="CalcLeft">
 
 
-      <div id="BMIDiv" style="display: none;">
+      <div id="BMIDiv">
 
         <h1><b>BMI berekenen</b></h1>
 
@@ -59,7 +59,7 @@
 
 
       <!--This div contains the entire Calorie counter-->
-      <div id="CalorieCounter" style="display: none;">
+      <div id="CalorieCounter">
         <h1><b>Calorie teller</b></h1>
 
         <h2>Activity options</h2>
@@ -256,11 +256,13 @@
     </div>
   </div>
 
+  <!--this div contains the "gezondheid" option-->
+  <div id="Gezondheid" style="display: none;">
+    <h1>GEZONDHEID WEETJEWEL</h1>
   </div>
 
-  <!--this div contains the "gezondheid" option-->
-  <div id="gezondheid">
-
+  <div id="OverOns" style="display: none;">
+    <h1>OVER ONS WEETJEWEL</h1>
   </div>
 </body>
 
