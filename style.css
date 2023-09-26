@@ -1,9 +1,9 @@
 :root {
-    --darkGreen: 8, 28, 21;
-    --brunswick: 27, 67, 50;
-    --seaGreen: 64, 145, 108;
-    --celadon: 183, 228, 199;
-    --nyanza: 216, 243, 220;
+    --darkGreen: rgb(8, 28, 21);
+    --brunswick: rgb(27, 67, 50);
+    --seaGreen: rgb(64, 145, 108);
+    --celadon: rgb(183, 228, 199);
+    --nyanza: rgb(216, 243, 220);
 }
 body{
     margin: 0%;
