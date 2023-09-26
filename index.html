@@ -186,124 +186,126 @@
       </div>
     </div>
     <div id="CalcRight">
-          <div id="CalorieGain">
-      <h1>Calories Gained</h1>
-      <p>
-        Check the boxes of the ingredients that you want to measure.
-      </p>
-      <div id="ProteinList">
-        <h2>Protein</h2>
-        <input type="checkbox" onclick="unhide('pork-p')"> Pork
-        <input type="checkbox" onclick="unhide('chicken-p')"> Chicken
-        <input type="checkbox" onclick="unhide('beef-p')"> Beef
-        <input type="checkbox" onclick="unhide('lamb-p')"> Lamb
-        <input type="checkbox" onclick="unhide('goat-p')"> Goat
-        <input type="checkbox" onclick="unhide('egg-p')"> Eggs
-        <input type="checkbox" onclick="unhide('rabbit-p')"> Rabbit
-        <input type="checkbox" onclick="unhide('nut-p')"> Nuts
-        <input type="checkbox" onclick="unhide('soy-p')"> Soy Beans
+      <div id="CalorieGain">
+        <h1>Calories Gained</h1>
+        <p>
+          Check the boxes of the ingredients that you want to measure.
+        </p>
+        <div id="ProteinList">
+          <h2>Protein</h2>
+          <input type="checkbox" onclick="unhide('pork-p')"> Pork
+          <input type="checkbox" onclick="unhide('chicken-p')"> Chicken
+          <input type="checkbox" onclick="unhide('beef-p')"> Beef
+          <input type="checkbox" onclick="unhide('lamb-p')"> Lamb
+          <input type="checkbox" onclick="unhide('goat-p')"> Goat
+          <input type="checkbox" onclick="unhide('egg-p')"> Eggs
+          <input type="checkbox" onclick="unhide('rabbit-p')"> Rabbit
+          <input type="checkbox" onclick="unhide('nut-p')"> Nuts
+          <input type="checkbox" onclick="unhide('soy-p')"> Soy Beans
+        </div>
+        <div id="VegList">
+          <h2>Vegetable</h2>
+          <input type="checkbox" onclick="unhide('onion-p')"> Onion
+          <input type="checkbox" onclick="unhide('cucumber-p')"> Cucumber
+          <input type="checkbox" onclick="unhide('cabage-p')"> Cabage
+          <input type="checkbox" onclick="unhide('aubergine-p')"> Auberine
+          <input type="checkbox" onclick="unhide('carrot-p')"> Carrot
+          <input type="checkbox" onclick="unhide('pepper-p')"> Peppers
+          <input type="checkbox" onclick="unhide('spinach-p')"> Spinach
+          <input type="checkbox" onclick="unhide('lettuce-p')"> Lettuce
+          <input type="checkbox" onclick="unhide('turnip-p')"> Turnip
+        </div>
+        <div>
+          <h2>Fruits</h2>
+          <input type="checkbox" onclick="unhide('tomato-p')"> Tomato
+          <input type="checkbox" onclick="unhide('banana-p')"> Banana
+          <input type="checkbox" onclick="unhide('watermelon-p')"> Watermelon
+          <input type="checkbox" onclick="unhide('apple-p')"> Apple
+          <input type="checkbox" onclick="unhide('grape-p')"> Grape
+          <input type="checkbox" onclick="unhide('orange-p')"> Orange
+          <input type="checkbox" onclick="unhide('mango-p')"> Mango
+          <input type="checkbox" onclick="unhide('melon-p')"> Melon
+          <input type="checkbox" onclick="unhide('pineapple-p')"> Pineapple
+        </div>
+        <div>
+          <h2>Grains</h2>
+          <input type="checkbox" onclick="unhide('wheat-p')"> Wheat
+          <input type="checkbox" onclick="unhide('barley-p')"> Barley
+          <input type="checkbox" onclick="unhide('oats-p')"> Oats
+          <input type="checkbox" onclick="unhide('quinoa-p')"> Quinoa
+          <input type="checkbox" onclick="unhide('rice-p')"> Rice
+          <input type="checkbox" onclick="unhide('rye-p')"> Rye
+        </div>
+        <div>
+          <h2>Dairy</h2>
+          <input type="checkbox" onclick="unhide('milk-p')"> Milk
+          <input type="checkbox" onclick="unhide('yoghurt-p')"> Yoghurt
+          <input type="checkbox" onclick="unhide('ice-p')"> Ice Cream
+          <input type="checkbox" onclick="unhide('cheese-p')"> Cheese
+          <input type="checkbox" onclick="unhide('butter-p')"> Butter
+          <input type="checkbox" onclick="unhide('cream-p')"> Cream
+        </div>
+        <br>
+        <button type="button" onclick="goCalculator()">To Calculator</button>
       </div>
-      <div id="VegList">
-        <h2>Vegetable</h2>
-        <input type="checkbox" onclick="unhide('onion-p')"> Onion
-        <input type="checkbox" onclick="unhide('cucumber-p')"> Cucumber
-        <input type="checkbox" onclick="unhide('cabage-p')"> Cabage
-        <input type="checkbox" onclick="unhide('aubergine-p')"> Auberine
-        <input type="checkbox" onclick="unhide('carrot-p')"> Carrot
-        <input type="checkbox" onclick="unhide('pepper-p')"> Peppers
-        <input type="checkbox" onclick="unhide('spinach-p')"> Spinach
-        <input type="checkbox" onclick="unhide('lettuce-p')"> Lettuce
-        <input type="checkbox" onclick="unhide('turnip-p')"> Turnip
-      </div>
-      <div>
-        <h2>Fruits</h2>
-        <input type="checkbox" onclick="unhide('tomato-p')"> Tomato
-        <input type="checkbox" onclick="unhide('banana-p')"> Banana
-        <input type="checkbox" onclick="unhide('watermelon-p')"> Watermelon
-        <input type="checkbox" onclick="unhide('apple-p')"> Apple
-        <input type="checkbox" onclick="unhide('grape-p')"> Grape
-        <input type="checkbox" onclick="unhide('orange-p')"> Orange
-        <input type="checkbox" onclick="unhide('mango-p')"> Mango
-        <input type="checkbox" onclick="unhide('melon-p')"> Melon
-        <input type="checkbox" onclick="unhide('pineapple-p')"> Pineapple
-      </div>
-      <div>
-        <h2>Grains</h2>
-        <input type="checkbox" onclick="unhide('wheat-p')"> Wheat
-        <input type="checkbox" onclick="unhide('barley-p')"> Barley
-        <input type="checkbox" onclick="unhide('oats-p')"> Oats
-        <input type="checkbox" onclick="unhide('quinoa-p')"> Quinoa
-        <input type="checkbox" onclick="unhide('rice-p')"> Rice
-        <input type="checkbox" onclick="unhide('rye-p')"> Rye
-      </div>
-      <div>
-        <h2>Dairy</h2>
-        <input type="checkbox" onclick="unhide('milk-p')"> Milk
-        <input type="checkbox" onclick="unhide('yoghurt-p')"> Yoghurt
-        <input type="checkbox" onclick="unhide('ice-p')"> Ice Cream
-        <input type="checkbox" onclick="unhide('cheese-p')"> Cheese
-        <input type="checkbox" onclick="unhide('butter-p')"> Butter
-        <input type="checkbox" onclick="unhide('cream-p')"> Cream
-      </div>
-      <br>
-      <button type="button" onclick="goCalculator()">To Calculator</button>
-    </div>
 
-    <!-- from choosing ingredients to calculator -->
-    <div id="GainCalculator" style="display: none">
-      <h1>Calorie Gained Calculator</h1>
-      <p>Insert total grams per ingredient here.</p>
-      <div id="ProteinChosen">
-        <p style="display: none;" id="pork-p"> Pork: <input type="number" class="calcGain" alt="20"></p>
-        <p style="display: none;" id="chicken-p"> Chicken: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="beef-p"> Beef: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="lamb-p"> Lamb: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="goat-p"> Goat: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="egg-p"> Eggs: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="rabbit-p"> Rabbit: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="nut-p"> Nuts: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="soy-p"> Soy Beans: <input type="number" class="calcGain" alt=""></p>
+      <!-- from choosing ingredients to calculator -->
+      <div id="GainCalculator" style="display: none">
+        <h1>Calorie Gained Calculator</h1>
+        <p>Insert total grams per ingredient here.</p>
+        <div id="ProteinChosen">
+          <p style="display: none;" id="pork-p"> Pork: <input type="number" class="calcGain" alt="20"></p>
+          <p style="display: none;" id="chicken-p"> Chicken: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="beef-p"> Beef: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="lamb-p"> Lamb: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="goat-p"> Goat: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="egg-p"> Eggs: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="rabbit-p"> Rabbit: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="nut-p"> Nuts: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="soy-p"> Soy Beans: <input type="number" class="calcGain" alt=""></p>
+        </div>
+        <div id="VeggieChosen">
+          <p style="display: none;" id="onion-p"> Onion: <input type="number" class="calcGain" alt="5"></p>
+          <p style="display: none;" id="cucumber-p"> Cucumber: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="cabage-p"> Cabage: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="aubergine-p"> Aubergine: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="carrot-p"> Carrot: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="pepper-p"> Pepper: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="spinach-p"> Spinach: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="lettuce-p"> Lettuce: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="turnip-p"> Turnip: <input type="number" class="calcGain" alt=""></p>
+        </div>
+        <div id="FruitsChosen">
+          <p style="display: none;" id="tomato-p"> Tomato: <input type="number" class="calcGain" alt="10"></p>
+          <p style="display: none;" id="banana-p"> Banana: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="watermelon-p"> Watermelon: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="apple-p"> Apple: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="grape-p"> Grape: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="orange-p"> Orange: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="mango-p"> Mango: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="melon-p"> Melon: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="pineapple-p"> Pineapple: <input type="number" class="calcGain" alt=""></p>
+        </div>
+        <div>
+          <p style="display: none;" id="wheat-p"> Wheat: <input type="number" class="calcGain" alt="15"></p>
+          <p style="display: none;" id="barley-p"> Barley: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="oats-p"> Oats: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="quinoa-p"> Quinoa: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="rice-p"> Rice: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="rye-p"> Rye: <input type="number" class="calcGain" alt=""></p>
+        </div>
+        <div>
+          <p style="display: none;" id="milk-p"> Milk: <input type="number" class="calcGain" alt="8"></p>
+          <p style="display: none;" id="yoghurt-p"> Yoghurt: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="ice-p"> Ice Cream: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="cheese-p"> Cheese: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="butter-p"> Butter: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="cream-p"> Cream: <input type="number" class="calcGain" alt=""></p>
+        </div>
+        <button type="button" onclick="CalcGain()">Bereken</button> <button type="button"
+          onclick="goCalculator()">Ingredients</button>
+        <p>Calories gained:<input type="text" id="resultGAIN" disabled></p>
       </div>
-      <div id="VeggieChosen">
-        <p style="display: none;" id="onion-p"> Onion:  <input type="number" class="calcGain" alt="5"></p>
-        <p style="display: none;" id="cucumber-p"> Cucumber: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="cabage-p"> Cabage: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="aubergine-p"> Aubergine: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="carrot-p"> Carrot: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="pepper-p"> Pepper: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="spinach-p"> Spinach: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="lettuce-p"> Lettuce: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="turnip-p"> Turnip: <input type="number" class="calcGain" alt=""></p>
-      </div>
-      <div id="FruitsChosen">
-        <p style="display: none;" id="tomato-p"> Tomato: <input type="number" class="calcGain" alt="10"></p>
-        <p style="display: none;" id="banana-p"> Banana: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="watermelon-p"> Watermelon: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="apple-p"> Apple: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="grape-p"> Grape: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="orange-p"> Orange: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="mango-p"> Mango: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="melon-p"> Melon: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="pineapple-p"> Pineapple: <input type="number" class="calcGain" alt=""></p>
-      </div>
-      <div>
-        <p style="display: none;" id="wheat-p"> Wheat: <input type="number" class="calcGain" alt="15"></p>
-        <p style="display: none;" id="barley-p"> Barley: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="oats-p"> Oats: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="quinoa-p"> Quinoa: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="rice-p"> Rice: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="rye-p"> Rye: <input type="number" class="calcGain" alt=""></p>
-      </div>
-      <div>
-        <p style="display: none;" id="milk-p"> Milk: <input type="number" class="calcGain" alt="8"></p>
-        <p style="display: none;" id="yoghurt-p"> Yoghurt: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="ice-p"> Ice Cream: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="cheese-p"> Cheese: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="butter-p"> Butter: <input type="number" class="calcGain" alt=""></p>
-        <p style="display: none;" id="cream-p"> Cream: <input type="number" class="calcGain" alt=""></p>
-      </div>
-      <button type="button" onclick="CalcGain()">Bereken</button> <button type="button" onclick="goCalculator()">Ingredients</button>
-      <p>Calories gained:<input type="text" id="resultGAIN" disabled></p>
     </div>
   </div>
 
@@ -313,7 +315,76 @@
   </div>
 
   <div id="OverOns" style="display: none;">
-    <h1>OVER ONS WEETJEWEL</h1>
+    <h1>Over Ons</h1>
+    <div id="OverAndre">
+      <img src="Foto's/OverOns/Andre.jpg" title="André" width="30%">
+      <p>
+        Dit is André Burger. Hij komt uit Afrika. <br>
+        André is desondanks toch blank, maar wel gespierd. Ondanks 
+        dat hij al gespierd is wil hij toch naar 
+        de gym gaan, waarvan veel mensen vinden dat dit 
+        geen goed idee is omdat hij dan te sterk zou worden.
+        Daarom heeft hij besloten om nog even te wachten met de
+        gym, zodat hij kan focussen op het helpen van anderen
+        bij het behalen van hun fitnessdoelen. Ook wil Hij
+        zijn focus leggen op wiskunde, omdat hij anders een
+        taart moet kopen voor meneer Ratsma.<br>
+        Al met al krijgt andré een rating van 4/28 taarten
+        Relationship status: Taken
+      </p>
+    </div>
+
+    <div id="OverJan">
+      <img src="Foto's/OverOns/Jan.jpg" title="Jan" width="30%">
+      <p>
+        Dit is Jan van Schaik een geboren gymrat die elk uur van de
+        dag wilt sporten. Helaas is hij al anderhalf jaar zwanger
+        waardoor hij zijn sporten moet minderen. Ondanks zijn
+        zwangerschap drinkt jan gewoon bier, want hij wilt de
+        baby eigenlijk helemaal niet. En als het draait om de
+        bierbuik dan sport hij die er toch wel af.<br>
+        Jan is momenteel betrokken in de LHBTQ+ movement. Hij 
+        vindt het erg belangrijk dat iedereen mag zijn wie je
+        wilt. Hij heeft recentelijk nog een pride vlag besteld
+        op het internet.<br>
+        Al met al krijgt Jan een rating van 36/6% alcohol
+        Relationship status: Single
+      </p>
+    </div>
+
+    <div id="OverLucas">
+      <img src="Foto's/OverOns/Lucas.jpg" title="Lucas" width="30%">
+      <p>
+        Dit is Lucas Kazius een echte levensgenieter. Hij plukt de
+        dag, elke dag. Hij komt elke dag fluitend het lokaal binnen 
+        helemaal klaar voor de les. <br>
+        Zijn vader werkt bij Corbion. Dat je dat ook ff weet. <br>
+        Lucas is verder erg gemotiveerd voor school, maar houdt
+        wel genoeg tijd over voor zijn vrienden in tegenstelling
+        tot de schrijver van dit tekstje die al de hele middag
+        aan school zit. <br>
+        Al met al krijgt Lucas een Rating van 10/10 breincellen
+        Relationship status: Taken
+      </p>
+    </div>
+
+    <div id="OverRuben">
+      <img src="Foto's/OverOns/Ruben.jpg" title="Ruben" width="30%">
+      <p>
+        Dit is Ruben van Dijk. Hij is zo ongelooflijk gespierd dat
+        het bijna niet te geloven is. Hij is veel gespierder dan 
+        André. Maar wees niet bang, zijn spieren zorgen niet alleen 
+        voor indrukwekkende kracht; ze tillen ook de sfeer om hem 
+        heen naar ongekende hoogten van vrolijkheid. Ruben is niet 
+        alleen een krachtpatser, maar ook een meester in het verspreiden 
+        van lachsalvo's en het oproepen van gierende pret. Dus, als je 
+        een workout voor je lachspieren nodig hebt, zoek dan niet 
+        verder dan Ruben van Dijk. Hij tilt humor naar een heel 
+        nieuw niveau! <br>
+        Al met al krijgt Ruben een rating van 17/23 lipoproteïnen
+        Relationship status: Taken
+      </p>
+    </div>
   </div>
 </body>
 
