@@ -12,21 +12,22 @@ body{
 /*gives the navigationbar the right shape and colours*/
 .NavBar{
     text-align: center;
-    padding: 0.5%;
-    font-size: 250%;
-    background-color: #94B49F;
+    padding: 0.25%;
+    font-size: 150%;
+    background-image: url("Foto's/NavbarBackground.jpg");
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    border-bottom: black 0.5px solid;
 }
 
 /*gives the items in the navigationbar the right shape and colours*/
 .MenuItem{
     margin: auto;
     padding: 1.5% 10% 1.5% 10%;
-    border: solid transparent;
-    border-width: 0.5px;
+    border: none;
     cursor: pointer;
     transition-duration: 100ms;
+    color: white;
 }
 
 .MenuItem:hover{
