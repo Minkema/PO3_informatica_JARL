@@ -1,8 +1,14 @@
+:root {
+    --darkGreen: 8, 28, 21;
+    --brunswick: 27, 67, 50;
+    --seaGreen: 64, 145, 108;
+    --celadon: 183, 228, 199;
+    --nyanza: 216, 243, 220;
+}
 body{
     margin: 0%;
     background-color: #CEE5D0;
 }
-
 /*gives the navigationbar the right shape and colours*/
 .NavBar{
     text-align: center;
