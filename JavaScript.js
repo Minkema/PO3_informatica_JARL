@@ -1,5 +1,6 @@
 //function to dropdown the contents of the dropdown menu
 function ShowBerekening(){
+  console.log("Showing Berekeningen")
   document.getElementById("Calculations").style.display = "grid"
   document.getElementById("HomePage").style.display = "none"
   document.getElementById("OverOns").style.display = "none"
@@ -7,13 +8,15 @@ function ShowBerekening(){
 }
 
 function ShowGezondheid(){
+  console.log("Showing Gezondheid")
   document.getElementById("Calculations").style.display = "none"
   document.getElementById("HomePage").style.display = "none"
   document.getElementById("OverOns").style.display = "none"
-  document.getElementById("Gezondheid").style.display = "block"
+  document.getElementById("Gezondheid").style.display = "initial"
 }
 
 function ShowOverOns(){
+  console.log("Showing Over Ons")
   document.getElementById("Calculations").style.display = "none"
   document.getElementById("HomePage").style.display = "none"
   document.getElementById("OverOns").style.display = "block"
