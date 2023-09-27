@@ -114,4 +114,33 @@ body{
 #OverAndre img, #OverLucas img, #OverJan img, #OverRuben img{
     width: 400px;
     height: auto;
+
+#Gezondheid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#SportvideosDiv{
+    background-color: #fdd3b9;
+    margin: 5%;
+    padding: 1%;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 0.5px;
+    height: 300px;
+}
+
+#Schijf_van_Vijf{
+    margin-top: 5%;
+    margin-left: 25%;
+}
+
+#VoedingstipsDiv{
+    background-color: #fdd3b9;
+    margin: 5%;
+    padding: 1%;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 0.5px;
+    height: 300px;
 }
