@@ -10,7 +10,7 @@ function ShowGezondheid(){
   document.getElementById("Calculations").style.display = "none"
   document.getElementById("HomePage").style.display = "none"
   document.getElementById("OverOns").style.display = "none"
-  document.getElementById("Gezondheid").style.display = "block"
+  document.getElementById("Gezondheid").style.display = "grid"
 }
 
 function ShowOverOns(){
