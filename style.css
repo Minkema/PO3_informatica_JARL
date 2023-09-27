@@ -125,7 +125,7 @@ body{
 #SportvideosDiv{
     background-color: #fdd3b9;
     margin: 5%;
-    padding: 1%;
+    padding: 1% 1% 35% 1%;
     border-radius: 20px;
     border-style: solid;
     border-width: 0.5px;
@@ -135,6 +135,7 @@ body{
 #Schijf_van_Vijf{
     margin-top: 5%;
     margin-left: 25%;
+    width: 100%;
 }
 
 #VoedingstipsDiv{
