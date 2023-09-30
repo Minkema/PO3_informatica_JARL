@@ -64,46 +64,46 @@
       <div id="CalorieCounter">
         <h1 id="CALh"><b>Calorie teller</b></h1>
 
-        <h2 id="CALh">Activity options</h2>
+        <h2 id="CALh">Activiteit opties</h2>
         <select name="aoCAL" id="selAct" onchange="selAct()" required>
-          <option id="SelOpt" disabled selected value> -- select an option -- </option>
-          <option value="divBall" id="aoBall">Ballsports</option>
-          <option value="divRacket" id="aoRack">Racketsports</option>
-          <option value="divFight" id="aoFight">Fightsports</option>
-          <option value="divWell" id="aoMaW">Mind and wellness</option>
-          <option value="divMind" id="aoMind">Mindsports</option>
-          <option value="divWater" id="aoSea">Watersports</option>
-          <option value="divSpare" id="aoST">Spare time</option>
-          <option value="divPrecision" id="aoPrec">Precision sports</option>
+          <option id="SelOpt" disabled selected value> -- Kies een optie -- </option>
+          <option value="divBall" id="aoBall">Balsport</option>
+          <option value="divRacket" id="aoRack">Racketsporten</option>
+          <option value="divFight" id="aoFight">Vechtsporten</option>
+          <option value="divWell" id="aoMaW">Welzijn</option>
+          <option value="divMind" id="aoMind">Mindsport</option>
+          <option value="divWater" id="aoSea">Watersport</option>
+          <option value="divSpare" id="aoST">Vrije Tijd</option>
+          <option value="divPrecision" id="aoPrec">Nauwkeurigheid sporten</option>
         </select>
         <form>
           <div>
             <div style="display: none;" id="divBall" class="divActivity">
               <label>
                 <h3 id="CALheader"><b>Ballsports:</b></h3>
-                <input type="checkbox" onclick="unhide('foot-p')" class="Ballsports"> Football
-                <input type="checkbox" onclick="unhide('golf-p')" class="Ballsports"> Golf
-                <input type="checkbox" onclick="unhide('basket-p')" class="Ballsports"> Basketball
-                <input type="checkbox" onclick="unhide('volley-p')" class="Ballsports"> Volleyball
-                <input type="checkbox" onclick="unhide('korf-p')" class="Ballsports"> Korfball
-                <input type="checkbox" onclick="unhide('hockey-p')" class="Ballsports"> Hockey
+                <input type="checkbox" onclick="unhide('foot-p')" class="Ballsports"> Voetballen
+                <input type="checkbox" onclick="unhide('golf-p')" class="Ballsports"> Golfen
+                <input type="checkbox" onclick="unhide('basket-p')" class="Ballsports"> Basketballen
+                <input type="checkbox" onclick="unhide('volley-p')" class="Ballsports"> Volleyballen
+                <input type="checkbox" onclick="unhide('korf-p')" class="Ballsports"> Korfballen
+                <input type="checkbox" onclick="unhide('hockey-p')" class="Ballsports"> Hockeyen
               </label>
             </div>
             <div style="display: none;" id="divRacket" class="divActivity">
               <label>
                 <h3 id="CALheader"><b>Racketsports:</b></h3>
                 <input type="checkbox" onclick="unhide('badminton-p')" class="Activity">Badminton&nbsp;&nbsp;
-                <input type="checkbox" onclick="unhide('tennis-p')" class="Activity">Tennis&nbsp;&nbsp;
+                <input type="checkbox" onclick="unhide('tennis-p')" class="Activity">Tennisen&nbsp;&nbsp;
                 <input type="checkbox" onclick="unhide('padel-p')" class="Activity">Padellen&nbsp;&nbsp;
-                <input type="checkbox" onclick="unhide('squash-p')" class="Activity">Squash&nbsp;&nbsp;
-                <input type="checkbox" onclick="unhide('table-p')" class="Activity">Tabletennis&nbsp;&nbsp;
+                <input type="checkbox" onclick="unhide('squash-p')" class="Activity">Squashen&nbsp;&nbsp;
+                <input type="checkbox" onclick="unhide('table-p')" class="Activity">Tafeltennisen&nbsp;&nbsp;
               </label>
             </div>
             <div style="display: none;" id="divFight" class="divActivity">
               <label>
                 <h3 id="CALheader"><b>Fightsports:</b></h3>
-                <input type="checkbox" onclick="unhide('box-p')" class="Activity">Boxing&nbsp;&nbsp;
-                <input type="checkbox" onclick="unhide('wrestle-p')" class="Activity">Wrestling&nbsp;&nbsp;
+                <input type="checkbox" onclick="unhide('box-p')" class="Activity">Boxen&nbsp;&nbsp;
+                <input type="checkbox" onclick="unhide('wrestle-p')" class="Activity">Stoeien&nbsp;&nbsp;
                 <input type="checkbox" onclick="unhide('judo-p')" class="Activity">Judo&nbsp;&nbsp;
               </label>
             </div>
@@ -124,25 +124,26 @@
             <div style="display: none;" id="divWater" class="divActivity">
               <label>
                 <h3 id="CALheader"><b>Watersports:</b></h3>
-                <input type="checkbox" onclick="unhide('swim-p')" class="Activity">Swimming&nbsp;&nbsp;
+                <input type="checkbox" onclick="unhide('swim-p')" class="Activity">Zwemmen&nbsp;&nbsp;
                 <input type="checkbox" onclick="unhide('polo-p')" class="Activity">Waterpolo&nbsp;&nbsp;
               </label>
             </div>
             <div style="display: none;" id="divSpare" class="divActivity">
               <label>
                 <h3 id="CALheader"><b>Spare time:</b></h3>
-                <input type="checkbox" onclick="unhide('run-p')" class="Activity">Running&nbsp;&nbsp;
-                <input type="checkbox" onclick="unhide('walk-p')" class="Activity">Walking&nbsp;&nbsp;
+                <input type="checkbox" onclick="unhide('run-p')" class="Activity">Rennen&nbsp;&nbsp;
+                <input type="checkbox" onclick="unhide('walk-p')" class="Activity">Wandelen&nbsp;&nbsp;
+                <input type="checkbox" onclick="unhide('cycle-p')" class="Activity">Fietsen&nbsp;&nbsp;
               </label>
             </div>
             <div style="display: none;" id="divPrecision" class="divActivity">
               <label>
                 <h3 id="CALheader"><b>Precision sports:</b></h3>
-                <input type="checkbox" onclick="unhide('bow-p')" class="Activity">Bowshooting&nbsp;&nbsp;
-                <input type="checkbox" onclick="unhide('bowl-p')" class="Activity">Bowling&nbsp;&nbsp;
-                <input type="checkbox" onclick="unhide('dart-p')" class="Activity">Darts&nbsp;&nbsp;
-                <input type="checkbox" onclick="unhide('shoot-p')" class="Activity">Shooting&nbsp;&nbsp;
-                <input type="checkbox" onclick="unhide('climb-p')" class="Activity">Climbing&nbsp;&nbsp;
+                <input type="checkbox" onclick="unhide('bow-p')" class="Activity">Boogschieten&nbsp;&nbsp;
+                <input type="checkbox" onclick="unhide('bowl-p')" class="Activity">Bowlen&nbsp;&nbsp;
+                <input type="checkbox" onclick="unhide('dart-p')" class="Activity">Darten&nbsp;&nbsp;
+                <input type="checkbox" onclick="unhide('shoot-p')" class="Activity">Schieten&nbsp;&nbsp;
+                <input type="checkbox" onclick="unhide('climb-p')" class="Activity">Klimmen&nbsp;&nbsp;
                 <input type="checkbox" onclick="unhide('frisbee-p')" class="Activity">Frisbee&nbsp;&nbsp;
               </label>
             </div>
@@ -150,223 +151,175 @@
         </form>
 
         <div id="MinutesMenu">
-          <p style="display: none;" id="run-p"> Minutes running: <input type="number" class="calcValue" alt="12,1"></p>
-          <p style="display: none;" id="walk-p"> Minutes walking: <input type="number" class="calcValue" alt="5,8"></p>
-          <p style="display: none;" id="swim-p"> Minutes swimming: <input type="number" class="calcValue" alt="7"></p>
-          <p style="display: none;" id="cycle-p"> Minutes cycling: <input type="number" class="calcValue" alt="8,3"></p>
-          <p style="display: none;" id="foot-p"> Minutes football <input type="number" class="calcValue" alt="5,8"></p>
-          <p style="display: none;" id="golf-p"> Minutes golf <input type="number" class="calcValue" alt="3,8"></p>
-          <p style="display: none;" id="basket-p"> Minutes basketball <input type="number" class="calcValue" alt="12,1"></p>
-          <p style="display: none;" id="volley-p"> Minutes volleyball <input type="number" class="calcValue" alt="9,8"></p>
-          <p style="display: none;" id="korf-p"> Minutes korfball <input type="number" class="calcValue" alt="9,8"></p>
-          <p style="display: none;" id="hockey-p"> Minutes hockey <input type="number" class="calcValue" alt="9,2"></p>
-          <p style="display: none;" id="badminton-p"> Minutes badminton <input type="number" class="calcValue" alt="7,5">
+          <p style="display: none;" id="run-p"> Minuten rennen: <input type="number" class="calcValue" alt="12.5"></p>
+          <p style="display: none;" id="walk-p"> Minuten wandelen: <input type="number" class="calcValue" alt="5.8"></p>
+          <p style="display: none;" id="swim-p"> Minuten zwemmen: <input type="number" class="calcValue" alt="7"></p>
+          <p style="display: none;" id="cycle-p"> Minuten fietsen: <input type="number" class="calcValue" alt="8.3"></p>
+          <p style="display: none;" id="foot-p"> Minuten voetballen: <input type="number" class="calcValue" alt="5.8"></p>
+          <p style="display: none;" id="golf-p"> Minuten golfen: <input type="number" class="calcValue" alt="3.8"></p>
+          <p style="display: none;" id="basket-p"> Minuten basketballen: <input type="number" class="calcValue" alt="12.1"></p>
+          <p style="display: none;" id="volley-p"> Minuten volleyballen: <input type="number" class="calcValue" alt="9.8"></p>
+          <p style="display: none;" id="korf-p"> Minuten korfballen: <input type="number" class="calcValue" alt="9.8"></p>
+          <p style="display: none;" id="hockey-p"> Minuten hockeyen: <input type="number" class="calcValue" alt="9.2"></p>
+          <p style="display: none;" id="badminton-p"> Minuten badminton: <input type="number" class="calcValue" alt="7.5">
           </p>
-          <p style="display: none;" id="tennis-p"> Minutes tennis <input type="number" class="calcValue" alt="8,8"></p>
-          <p style="display: none;" id="padel-p"> Minutes padellen <input type="number" class="calcValue" alt="9,8"></p>
-          <p style="display: none;" id="squash-p"> Minutes squash <input type="number" class="calcValue" alt="10,6"></p>
-          <p style="display: none;" id="table-p"> Minutes tafeltennis <input type="number" class="calcValue" alt="5"></p>
-          <p style="display: none;" id="box-p"> Minutes boxing <input type="number" class="calcValue" alt="15,6"></p>
-          <p style="display: none;" id="wrestle-p"> Minutes wrestling <input type="number" class="calcValue" alt="8,2"></p>
-          <p style="display: none;" id="judo-p"> Minutes judo <input type="number" class="calcValue" alt="11,6"></p>
-          <p style="display: none;" id="yoga-p"> Minutes yoga <input type="number" class="calcValue" alt="3,2"></p>
-          <p style="display: none;" id="sauna-p"> Minutes sauna <input type="number" class="calcValue" alt="0"></p>
-          <p style="display: none;" id="chess-p"> Minutes chess <input type="number" class="calcValue" alt="3,3"></p>
-          <p style="display: none;" id="check-p"> Minutes checkers <input type="number" class="calcValue" alt="1,8"></p>
-          <p style="display: none;" id="polo-p"> Minutes waterpolo <input type="number" class="calcValue" alt=""></p>
-          <p style="display: none;" id="bow-p"> Minutes archery <input type="number" class="calcValue" alt=""></p>
-          <p style="display: none;" id="bowl-p"> Minutes bowling <input type="number" class="calcValue" alt=""></p>
-          <p style="display: none;" id="dart-p"> Minutes darts <input type="number" class="calcValue" alt=""></p>
-          <p style="display: none;" id="shoot-p"> Minutes shooting <input type="number" class="calcValue" alt=""></p>
-          <p style="display: none;" id="climb-p"> Minutes climbing <input type="number" class="calcValue" alt=""></p>
-          <p style="display: none;" id="frisbee-p"> Minutes frisbee <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="tennis-p"> Minuten tennisen: <input type="number" class="calcValue" alt="8.8"></p>
+          <p style="display: none;" id="padel-p"> Minuten padellen: <input type="number" class="calcValue" alt="9.8"></p>
+          <p style="display: none;" id="squash-p"> Minuten squashen: <input type="number" class="calcValue" alt="10.6"></p>
+          <p style="display: none;" id="table-p"> Minuten tafeltennisen: <input type="number" class="calcValue" alt="5"></p>
+          <p style="display: none;" id="box-p"> Minuten boxen: <input type="number" class="calcValue" alt="15.6"></p>
+          <p style="display: none;" id="wrestle-p"> Minuten stoeien: <input type="number" class="calcValue" alt="8.2"></p>
+          <p style="display: none;" id="judo-p"> Minuten judo: <input type="number" class="calcValue" alt="11.6"></p>
+          <p style="display: none;" id="yoga-p"> Minuten yoga: <input type="number" class="calcValue" alt="3.2"></p>
+          <p style="display: none;" id="sauna-p"> Minuten sauna: <input type="number" class="calcValue" alt="0"></p>
+          <p style="display: none;" id="chess-p"> Minuten chess: <input type="number" class="calcValue" alt="3.3"></p>
+          <p style="display: none;" id="check-p"> Minuten checkers: <input type="number" class="calcValue" alt="1.8"></p>
+          <p style="display: none;" id="polo-p"> Minuten waterpolo: <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="bow-p"> Minuten boogschieten: <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="bowl-p"> Minuten bowlen: <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="dart-p"> Minuten darten: <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="shoot-p"> Minuten schieten: <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="climb-p"> Minuten klimmen: <input type="number" class="calcValue" alt=""></p>
+          <p style="display: none;" id="frisbee-p"> Minuten frisbee: <input type="number" class="calcValue" alt=""></p>
         </div>
 
         <p>&nbsp;</p>
         <button id="CALcalc" onclick="CALcalcFunction()">Berekenen</button><br><br>
-        <p>Calories burnt:<input type="text" id="resultCAL" disabled></p><br><br>
+        <p>Calorieën verbrand:<input type="text" id="resultCAL" disabled></p><br><br>
       </div>
     </div>
     <div id="CalcRight">
       <div id="CalorieGain">
-        <h1>Calories Gained</h1>
+        <h1>Calorieën Verzameld</h1>
         <p>
-          Check the boxes of the ingredients that you want to measure.
+          Vink de vakjes aan van de ingrediënten die je wilt meten.
         </p>
         <div id="ProteinList">
-          <h2 id="AddCalHead">Protein</h2>
-          <input type="checkbox" onclick="unhide('pork-p')"> Pork
-          <input type="checkbox" onclick="unhide('chicken-p')"> Chicken
-          <input type="checkbox" onclick="unhide('beef-p')"> Beef
-          <input type="checkbox" onclick="unhide('lamb-p')"> Lamb
-          <input type="checkbox" onclick="unhide('goat-p')"> Goat
-          <input type="checkbox" onclick="unhide('egg-p')"> Eggs
-          <input type="checkbox" onclick="unhide('rabbit-p')"> Rabbit
-          <input type="checkbox" onclick="unhide('nut-p')"> Nuts
-          <input type="checkbox" onclick="unhide('soy-p')"> Soy Beans
+          <h2 id="AddCalHead">Proteïne</h2>
+          <input type="checkbox" onclick="unhide('pork-p')"> Vark
+          <input type="checkbox" onclick="unhide('chicken-p')"> Kip
+          <input type="checkbox" onclick="unhide('beef-p')"> Rund
+          <input type="checkbox" onclick="unhide('lamb-p')"> Lamsvlees
+          <input type="checkbox" onclick="unhide('goat-p')"> Geit
+          <input type="checkbox" onclick="unhide('egg-p')"> Ei
+          <input type="checkbox" onclick="unhide('rabbit-p')"> Konijn
+          <input type="checkbox" onclick="unhide('nut-p')"> Neuten
+          <input type="checkbox" onclick="unhide('soy-p')"> Soya Bonen
         </div>
         <div id="VegList">
-          <h2 id="AddCalHead">Vegetable</h2>
-          <input type="checkbox" onclick="unhide('onion-p')"> Onion
-          <input type="checkbox" onclick="unhide('cucumber-p')"> Cucumber
-          <input type="checkbox" onclick="unhide('cabage-p')"> Cabage
-          <input type="checkbox" onclick="unhide('aubergine-p')"> Auberine
-          <input type="checkbox" onclick="unhide('carrot-p')"> Carrot
-          <input type="checkbox" onclick="unhide('pepper-p')"> Peppers
-          <input type="checkbox" onclick="unhide('spinach-p')"> Spinach
-          <input type="checkbox" onclick="unhide('lettuce-p')"> Lettuce
-          <input type="checkbox" onclick="unhide('turnip-p')"> Turnip
+          <h2 id="AddCalHead">Groenten</h2>
+          <input type="checkbox" onclick="unhide('onion-p')"> Uien
+          <input type="checkbox" onclick="unhide('cucumber-p')"> Komkommer
+          <input type="checkbox" onclick="unhide('cabage-p')"> Kool
+          <input type="checkbox" onclick="unhide('aubergine-p')"> Aubergine
+          <input type="checkbox" onclick="unhide('carrot-p')"> Wortel
+          <input type="checkbox" onclick="unhide('pepper-p')"> Paprika
+          <input type="checkbox" onclick="unhide('spinach-p')"> Spinazie
+          <input type="checkbox" onclick="unhide('lettuce-p')"> Salade
+          <input type="checkbox" onclick="unhide('turnip-p')"> Raap
         </div>
-        <div>
-          <h2 id="AddCalHead">Fruits</h2>
-          <input type="checkbox" onclick="unhide('tomato-p')"> Tomato
-          <input type="checkbox" onclick="unhide('banana-p')"> Banana
-          <input type="checkbox" onclick="unhide('watermelon-p')"> Watermelon
-          <input type="checkbox" onclick="unhide('apple-p')"> Apple
-          <input type="checkbox" onclick="unhide('grape-p')"> Grape
-          <input type="checkbox" onclick="unhide('orange-p')"> Orange
+        <div id="FruitList">
+          <h2 id="AddCalHead">Vruchten</h2>
+          <input type="checkbox" onclick="unhide('tomato-p')"> Tomaat
+          <input type="checkbox" onclick="unhide('banana-p')"> Banaan
+          <input type="checkbox" onclick="unhide('watermelon-p')"> Watermeloen
+          <input type="checkbox" onclick="unhide('apple-p')"> Appel
+          <input type="checkbox" onclick="unhide('grape-p')"> Druiven
+          <input type="checkbox" onclick="unhide('orange-p')"> Sinaasappel
           <input type="checkbox" onclick="unhide('mango-p')"> Mango
-          <input type="checkbox" onclick="unhide('melon-p')"> Melon
-          <input type="checkbox" onclick="unhide('pineapple-p')"> Pineapple
+          <input type="checkbox" onclick="unhide('melon-p')"> Meloen
+          <input type="checkbox" onclick="unhide('pineapple-p')"> Annanas
         </div>
-        <div>
-          <h2 id="AddCalHead">Grains</h2>
-          <input type="checkbox" onclick="unhide('wheat-p')"> Wheat
-          <input type="checkbox" onclick="unhide('barley-p')"> Barley
-          <input type="checkbox" onclick="unhide('oats-p')"> Oats
+        <div id="GrandList">
+          <h2 id="AddCalHead">Graan</h2>
+          <input type="checkbox" onclick="unhide('wheat-p')"> Tarwe
+          <input type="checkbox" onclick="unhide('barley-p')"> Gerts
+          <input type="checkbox" onclick="unhide('oats-p')"> Haver
           <input type="checkbox" onclick="unhide('quinoa-p')"> Quinoa
-          <input type="checkbox" onclick="unhide('rice-p')"> Rice
-          <input type="checkbox" onclick="unhide('rye-p')"> Rye
+          <input type="checkbox" onclick="unhide('rice-p')"> Rijst
+          <input type="checkbox" onclick="unhide('rye-p')"> Rogge
         </div>
-        <div>
-          <h2 id="AddCalHead">Dairy</h2>
-          <input type="checkbox" onclick="unhide('milk-p')"> Milk
+        <div id="DairyList">
+          <h2 id="AddCalHead">Zuivel</h2>
+          <input type="checkbox" onclick="unhide('milk-p')"> Melk
           <input type="checkbox" onclick="unhide('yoghurt-p')"> Yoghurt
-          <input type="checkbox" onclick="unhide('ice-p')"> Ice Cream
-          <input type="checkbox" onclick="unhide('cheese-p')"> Cheese
-          <input type="checkbox" onclick="unhide('butter-p')"> Butter
-          <input type="checkbox" onclick="unhide('cream-p')"> Cream
+          <input type="checkbox" onclick="unhide('ice-p')"> Ijs
+          <input type="checkbox" onclick="unhide('cheese-p')"> Kaas
+          <input type="checkbox" onclick="unhide('butter-p')"> Botter
+          <input type="checkbox" onclick="unhide('cream-p')"> Slagroom
         </div>
         <br>
-        <button type="button" onclick="goCalculator()">To Calculator</button>
+        <button type="button" onclick="goCalculator()">Naar Calculator</button>
       </div>
 
       <!-- from choosing ingredients to calculator -->
       <div id="GainCalculator" style="display: none">
-        <h1>Calorie Gained Calculator</h1>
-        <p>Insert total grams per ingredient here.</p>
-        <div id="ProteinChosen">
-          <p style="display: none;" id="pork-p"> Pork: <input type="number" class="calcGain" alt="20"></p>
-          <p style="display: none;" id="chicken-p"> Chicken: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="beef-p"> Beef: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="lamb-p"> Lamb: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="goat-p"> Goat: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="egg-p"> Eggs: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="rabbit-p"> Rabbit: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="nut-p"> Nuts: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="soy-p"> Soy Beans: <input type="number" class="calcGain" alt=""></p>
+        <h1>Calorien Krijgen Berekeningen</h1>
+        <p>Vul totaal hoeveel gram per ingredient hier in.</p>
+       <div>
+        <div id="GramMenu">
+          <p> Zuiker: <input type="number" class="calcGain" alt=""></p>
+          <p> Olies: <input type="number" class="calcGain" alt=""></p>
         </div>
-        <div id="VeggieChosen">
-          <p style="display: none;" id="onion-p"> Onion: <input type="number" class="calcGain" alt="5"></p>
-          <p style="display: none;" id="cucumber-p"> Cucumber: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="cabage-p"> Cabage: <input type="number" class="calcGain" alt=""></p>
+        <h3>Proteïnen:</h3>
+        <div id="GramMenu">
+          <p style="display: none;" id="pork-p"> Vark: <input type="number" class="calcGain" alt="20"></p>
+          <p style="display: none;" id="chicken-p"> Kip: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="beef-p"> Rund: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="lamb-p"> Lamsvlees: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="goat-p"> Geit: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="egg-p"> Ei: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="rabbit-p"> Konijn: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="nut-p"> Neuten: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="soy-p"> Soya Bonen: <input type="number" class="calcGain" alt=""></p>
+        </div>
+        <h3>Groenten:</h3>
+        <div id="GramMenu">
+          <p style="display: none;" id="onion-p"> Uien: <input type="number" class="calcGain" alt="5"></p>
+          <p style="display: none;" id="cucumber-p"> Komkommer: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="cabage-p"> Kool: <input type="number" class="calcGain" alt=""></p>
           <p style="display: none;" id="aubergine-p"> Aubergine: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="carrot-p"> Carrot: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="pepper-p"> Pepper: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="spinach-p"> Spinach: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="lettuce-p"> Lettuce: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="turnip-p"> Turnip: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="carrot-p"> Wortel: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="pepper-p"> Paprika: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="spinach-p"> Spinasie: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="lettuce-p"> Salade: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="turnip-p"> Raap: <input type="number" class="calcGain" alt=""></p>
         </div>
-        <div id="FruitsChosen">
-          <p style="display: none;" id="tomato-p"> Tomato: <input type="number" class="calcGain" alt="10"></p>
-          <p style="display: none;" id="banana-p"> Banana: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="watermelon-p"> Watermelon: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="apple-p"> Apple: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="grape-p"> Grape: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="orange-p"> Orange: <input type="number" class="calcGain" alt=""></p>
+        <h3>Vruchten:</h3>
+        <div id="GramMenu">
+          <p style="display: none;" id="tomato-p"> Tomaat: <input type="number" class="calcGain" alt="10"></p>
+          <p style="display: none;" id="banana-p"> Banaan: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="watermelon-p"> Watermeloen: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="apple-p"> Appel: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="grape-p"> Druiven: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="orange-p"> Sinaasappel: <input type="number" class="calcGain" alt=""></p>
           <p style="display: none;" id="mango-p"> Mango: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="melon-p"> Melon: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="pineapple-p"> Pineapple: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="melon-p"> Meloen: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="pineapple-p"> Annanas: <input type="number" class="calcGain" alt=""></p>
         </div>
-        <div>
-          <p style="display: none;" id="wheat-p"> Wheat: <input type="number" class="calcGain" alt="15"></p>
-          <p style="display: none;" id="barley-p"> Barley: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="oats-p"> Oats: <input type="number" class="calcGain" alt=""></p>
+        <h3>Granen:</h3>
+        <div id="GramMenu">
+          <p style="display: none;" id="wheat-p"> Tarwe: <input type="number" class="calcGain" alt="15"></p>
+          <p style="display: none;" id="barley-p"> Gerts: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="oats-p"> Haver: <input type="number" class="calcGain" alt=""></p>
           <p style="display: none;" id="quinoa-p"> Quinoa: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="rice-p"> Rice: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="rye-p"> Rye: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="rice-p"> Rijst: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="rye-p"> Rogge: <input type="number" class="calcGain" alt=""></p>
         </div>
-        <div>
-          <p style="display: none;" id="milk-p"> Milk: <input type="number" class="calcGain" alt="8"></p>
+        <h3>Zuivel:</h3>
+        <div id="GramMenu">
+          <p style="display: none;" id="milk-p"> Melk: <input type="number" class="calcGain" alt="8"></p>
           <p style="display: none;" id="yoghurt-p"> Yoghurt: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="ice-p"> Ice Cream: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="cheese-p"> Cheese: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="butter-p"> Butter: <input type="number" class="calcGain" alt=""></p>
-          <p style="display: none;" id="cream-p"> Cream: <input type="number" class="calcGain" alt=""></p>
-        </div>
-        <button id="GainBut" type="button" onclick="CalcGain()">Bereken</button> <button id="GainBut" type="button"
-          onclick="goCalculator()">Ingredients</button>
-        <p>Calories gained:<input type="text" id="resultGAIN" disabled></p>
+          <p style="display: none;" id="ice-p"> Ijs: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="cheese-p"> Kaas: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="butter-p"> Botter: <input type="number" class="calcGain" alt=""></p>
+          <p style="display: none;" id="cream-p"> Slagroom: <input type="number" class="calcGain" alt=""></p>
 
-        <!-- from choosing ingredients to calculator -->
-        <div id="GainCalculator" style="display: none">
-          <h1>Calorie Gained Calculator</h1>
-          <p>Insert total grams per ingredient here.</p>
-          <div id="StandardIngredients">
-            <p> Sugar: <input type="number" class="calcGain" alt=""></p>
-            <p> Oils: <input type="number" class="calcGain" alt=""></p>
-          </div>
-          <div id="ProteinChosen">
-            <p style="display: none;" id="pork-p"> Pork: <input type="number" class="calcGain" alt="20"></p>
-            <p style="display: none;" id="chicken-p"> Chicken: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="beef-p"> Beef: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="lamb-p"> Lamb: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="goat-p"> Goat: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="egg-p"> Eggs: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="rabbit-p"> Rabbit: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="nut-p"> Nuts: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="soy-p"> Soy Beans: <input type="number" class="calcGain" alt=""></p>
-          </div>
-          <div id="VeggieChosen">
-            <p style="display: none;" id="onion-p"> Onion: <input type="number" class="calcGain" alt="5"></p>
-            <p style="display: none;" id="cucumber-p"> Cucumber: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="cabage-p"> Cabage: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="aubergine-p"> Aubergine: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="carrot-p"> Carrot: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="pepper-p"> Pepper: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="spinach-p"> Spinach: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="lettuce-p"> Lettuce: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="turnip-p"> Turnip: <input type="number" class="calcGain" alt=""></p>
-          </div>
-          <div id="FruitsChosen">
-            <p style="display: none;" id="tomato-p"> Tomato: <input type="number" class="calcGain" alt="10"></p>
-            <p style="display: none;" id="banana-p"> Banana: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="watermelon-p"> Watermelon: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="apple-p"> Apple: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="grape-p"> Grape: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="orange-p"> Orange: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="mango-p"> Mango: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="melon-p"> Melon: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="pineapple-p"> Pineapple: <input type="number" class="calcGain" alt=""></p>
-          </div>
-          <div>
-            <p style="display: none;" id="wheat-p"> Wheat: <input type="number" class="calcGain" alt="15"></p>
-            <p style="display: none;" id="barley-p"> Barley: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="oats-p"> Oats: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="quinoa-p"> Quinoa: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="rice-p"> Rice: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="rye-p"> Rye: <input type="number" class="calcGain" alt=""></p>
-          </div>
-          <div>
-            <p style="display: none;" id="milk-p"> Milk: <input type="number" class="calcGain" alt="8"></p>
-            <p style="display: none;" id="yoghurt-p"> Yoghurt: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="ice-p"> Ice Cream: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="cheese-p"> Cheese: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="butter-p"> Butter: <input type="number" class="calcGain" alt=""></p>
-            <p style="display: none;" id="cream-p"> Cream: <input type="number" class="calcGain" alt=""></p>
-
-          </div>
         </div>
+        <button id="GainBut" type="button" onclick="CalcGain()">Bereken</button>
+        <button id="GainBut" type="button" onclick="goCalculator()">Ingredienten</button>
+        <p>Calorieën gekregen:<input type="text" id="resultGAIN" disabled></p>
+       </div>
       </div>
     </div>
   </div>
@@ -415,7 +368,8 @@
         zijn focus leggen op wiskunde, omdat hij anders een
         taart moet kopen voor meneer Ratsma.<br>
         Al met al krijgt andré een rating van 4/28 taarten
-        Relationship status: Taken
+        Relationship status: Taken * 2
+        (Relatie met Ruben en Stella)
       </p>
     </div>
 
@@ -467,10 +421,14 @@
         verder dan Ruben van Dijk. Hij tilt humor naar een heel
         nieuw niveau! <br>
         Al met al krijgt Ruben een rating van 17/23 lipoproteïnen
-        Relationship status: Taken
+        Relationship status: Taken * 2
+        (Relatie met André en Lorine)
       </p>
     </div>
   </div>
 </body>
+
+</html>
+
 
 </html>
