@@ -42,7 +42,9 @@
 
 
       <div id="BMIDiv">
-
+        <div id="BMIimage">
+          <img id="BMIimg" src="Foto's/BMI-Body-Mass-Index.jpg"></img>
+        </div>
         <h1><b>BMI berekenen</b></h1>
 
         <!--This is the place where to put the length en weigth variables, also known as the input-->
@@ -60,11 +62,11 @@
 
       <!--This div contains the entire Calorie counter-->
       <div id="CalorieCounter">
-        <h1><b>Calorie teller</b></h1>
+        <h1 id="CALh"><b>Calorie teller</b></h1>
 
-        <h2>Activity options</h2>
+        <h2 id="CALh">Activity options</h2>
         <select name="aoCAL" id="selAct" onchange="selAct()" required>
-          <option disabled selected value> -- select an option -- </option>
+          <option id="SelOpt" disabled selected value> -- select an option -- </option>
           <option value="divBall" id="aoBall">Ballsports</option>
           <option value="divRacket" id="aoRack">Racketsports</option>
           <option value="divFight" id="aoFight">Fightsports</option>
@@ -78,7 +80,7 @@
           <div>
             <div style="display: none;" id="divBall" class="divActivity">
               <label>
-                <h3><b>Ballsports:</b></h3>
+                <h3 id="CALheader"><b>Ballsports:</b></h3>
                 <input type="checkbox" onclick="unhide('foot-p')" class="Ballsports"> Football
                 <input type="checkbox" onclick="unhide('golf-p')" class="Ballsports"> Golf
                 <input type="checkbox" onclick="unhide('basket-p')" class="Ballsports"> Basketball
@@ -89,7 +91,7 @@
             </div>
             <div style="display: none;" id="divRacket" class="divActivity">
               <label>
-                <h3><b>Racketsports:</b></h3>
+                <h3 id="CALheader"><b>Racketsports:</b></h3>
                 <input type="checkbox" onclick="unhide('badminton-p')" class="Activity">Badminton&nbsp;&nbsp;
                 <input type="checkbox" onclick="unhide('tennis-p')" class="Activity">Tennis&nbsp;&nbsp;
                 <input type="checkbox" onclick="unhide('padel-p')" class="Activity">Padellen&nbsp;&nbsp;
@@ -99,7 +101,7 @@
             </div>
             <div style="display: none;" id="divFight" class="divActivity">
               <label>
-                <h3><b>Fightsports:</b></h3>
+                <h3 id="CALheader"><b>Fightsports:</b></h3>
                 <input type="checkbox" onclick="unhide('box-p')" class="Activity">Boxing&nbsp;&nbsp;
                 <input type="checkbox" onclick="unhide('wrestle-p')" class="Activity">Wrestling&nbsp;&nbsp;
                 <input type="checkbox" onclick="unhide('judo-p')" class="Activity">Judo&nbsp;&nbsp;
@@ -107,35 +109,35 @@
             </div>
             <div style="display: none;" id="divWell" class="divActivity">
               <label>
-                <h3><b>Mind and wellness:</b></h3>
+                <h3 id="CALheader"><b>Mind and wellness:</b></h3>
                 <input type="checkbox" onclick="unhide('yoga-p')" class="Activity">Yoga&nbsp;&nbsp;
                 <input type="checkbox" onclick="unhide('sauna-p')" class="Activity">Sauna&nbsp;&nbsp;
               </label>
             </div>
             <div style="display: none;" id="divMind" class="divActivity">
               <label>
-                <h3><b>Mindsports:</b></h3>
+                <h3 id="CALheader"><b>Mindsports:</b></h3>
                 <input type="checkbox" onclick="unhide('chess-p')" class="Activity">Chess&nbsp;&nbsp;
                 <input type="checkbox" onclick="unhide('check-p')" class="Activity">Checkers&nbsp;&nbsp;
               </label>
             </div>
             <div style="display: none;" id="divWater" class="divActivity">
               <label>
-                <h3><b>Watersports:</b></h3>
+                <h3 id="CALheader"><b>Watersports:</b></h3>
                 <input type="checkbox" onclick="unhide('swim-p')" class="Activity">Swimming&nbsp;&nbsp;
                 <input type="checkbox" onclick="unhide('polo-p')" class="Activity">Waterpolo&nbsp;&nbsp;
               </label>
             </div>
             <div style="display: none;" id="divSpare" class="divActivity">
               <label>
-                <h3><b>Spare time:</b></h3>
+                <h3 id="CALheader"><b>Spare time:</b></h3>
                 <input type="checkbox" onclick="unhide('run-p')" class="Activity">Running&nbsp;&nbsp;
                 <input type="checkbox" onclick="unhide('walk-p')" class="Activity">Walking&nbsp;&nbsp;
               </label>
             </div>
             <div style="display: none;" id="divPrecision" class="divActivity">
               <label>
-                <h3><b>Precision sports:</b></h3>
+                <h3 id="CALheader"><b>Precision sports:</b></h3>
                 <input type="checkbox" onclick="unhide('bow-p')" class="Activity">Bowshooting&nbsp;&nbsp;
                 <input type="checkbox" onclick="unhide('bowl-p')" class="Activity">Bowling&nbsp;&nbsp;
                 <input type="checkbox" onclick="unhide('dart-p')" class="Activity">Darts&nbsp;&nbsp;
@@ -192,7 +194,7 @@
           Check the boxes of the ingredients that you want to measure.
         </p>
         <div id="ProteinList">
-          <h2>Protein</h2>
+          <h2 id="AddCalHead">Protein</h2>
           <input type="checkbox" onclick="unhide('pork-p')"> Pork
           <input type="checkbox" onclick="unhide('chicken-p')"> Chicken
           <input type="checkbox" onclick="unhide('beef-p')"> Beef
@@ -204,7 +206,7 @@
           <input type="checkbox" onclick="unhide('soy-p')"> Soy Beans
         </div>
         <div id="VegList">
-          <h2>Vegetable</h2>
+          <h2 id="AddCalHead">Vegetable</h2>
           <input type="checkbox" onclick="unhide('onion-p')"> Onion
           <input type="checkbox" onclick="unhide('cucumber-p')"> Cucumber
           <input type="checkbox" onclick="unhide('cabage-p')"> Cabage
@@ -216,7 +218,7 @@
           <input type="checkbox" onclick="unhide('turnip-p')"> Turnip
         </div>
         <div>
-          <h2>Fruits</h2>
+          <h2 id="AddCalHead">Fruits</h2>
           <input type="checkbox" onclick="unhide('tomato-p')"> Tomato
           <input type="checkbox" onclick="unhide('banana-p')"> Banana
           <input type="checkbox" onclick="unhide('watermelon-p')"> Watermelon
@@ -228,7 +230,7 @@
           <input type="checkbox" onclick="unhide('pineapple-p')"> Pineapple
         </div>
         <div>
-          <h2>Grains</h2>
+          <h2 id="AddCalHead">Grains</h2>
           <input type="checkbox" onclick="unhide('wheat-p')"> Wheat
           <input type="checkbox" onclick="unhide('barley-p')"> Barley
           <input type="checkbox" onclick="unhide('oats-p')"> Oats
@@ -237,7 +239,7 @@
           <input type="checkbox" onclick="unhide('rye-p')"> Rye
         </div>
         <div>
-          <h2>Dairy</h2>
+          <h2 id="AddCalHead">Dairy</h2>
           <input type="checkbox" onclick="unhide('milk-p')"> Milk
           <input type="checkbox" onclick="unhide('yoghurt-p')"> Yoghurt
           <input type="checkbox" onclick="unhide('ice-p')"> Ice Cream
@@ -302,7 +304,7 @@
           <p style="display: none;" id="butter-p"> Butter: <input type="number" class="calcGain" alt=""></p>
           <p style="display: none;" id="cream-p"> Cream: <input type="number" class="calcGain" alt=""></p>
         </div>
-        <button type="button" onclick="CalcGain()">Bereken</button> <button type="button"
+        <button id="GainBut" type="button" onclick="CalcGain()">Bereken</button> <button id="GainBut" type="button"
           onclick="goCalculator()">Ingredients</button>
         <p>Calories gained:<input type="text" id="resultGAIN" disabled></p>
 
