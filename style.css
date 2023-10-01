@@ -158,12 +158,12 @@ body{
     font-weight: bold;
 }
 
-/*Adds the right looks for the Claorie Gained Results*/
+/*Adds the right looks for the Calorie Gained Results*/
 #resultCAL{
     color:whitesmoke
 }
 
-/*Adds the right looks for the Claorie Gained Menu*/
+/*Adds the right looks for the Calorie Gained Menu*/
 #CalorieGain{
     background-color: #add8e6;
     margin: 5%;
@@ -191,7 +191,7 @@ body{
 /*Adds the right looks for the Calories gained result*/
 #resultGAIN{
     cursor: pointer;
-    color: white;
+    color: black;
 }
 
 /*Adds the right looks for the homepage*/
