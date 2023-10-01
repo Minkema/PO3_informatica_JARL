@@ -1,4 +1,4 @@
-//function to dropdown the contents of the dropdown menu
+//function to show the calculations page
 function ShowBerekening(){
   document.getElementById("Calculations").style.display = "grid"
   document.getElementById("HomePage").style.display = "none"
@@ -6,6 +6,7 @@ function ShowBerekening(){
   document.getElementById("Gezondheid").style.display = "none"
 }
 
+//function to show the health page
 function ShowGezondheid(){
   document.getElementById("Calculations").style.display = "none"
   document.getElementById("HomePage").style.display = "none"
@@ -13,6 +14,7 @@ function ShowGezondheid(){
   document.getElementById("Gezondheid").style.display = "grid"
 }
 
+//function to show the about us page
 function ShowOverOns(){
   document.getElementById("Calculations").style.display = "none"
   document.getElementById("HomePage").style.display = "none"
@@ -55,6 +57,7 @@ function BMIberekenFunction() {
   }
 }
 
+//function to calculate Calories
 function CALcalcFunction() {
 
     var total = 0;
@@ -75,7 +78,7 @@ function CalcValue(time, burnrate)
         return 0;
 }
 
-
+//function to show activities that are selected
 function unhide(activity) {
     activity = document.getElementById(activity);
     if (activity.style.display === "none") {
@@ -85,6 +88,7 @@ function unhide(activity) {
     }
 }
 
+//function to slect activity
 function selAct() {
     var subActivity = document.getElementById("selAct").value;
     var elements = document.getElementsByClassName("divActivity");
@@ -98,6 +102,7 @@ function selAct() {
     }
 }
 
+//function to go to calculator
 function goCalculator() {
   var ingredient = document.getElementById("CalorieGain")
   var calc = document.getElementById("GainCalculator")
@@ -110,6 +115,7 @@ function goCalculator() {
   }
 }
 
+//function to calculate the amount of calories gained
 function CalcGain() {
   let total = 0;
   let elements = document.getElementsByClassName("calcGain");
