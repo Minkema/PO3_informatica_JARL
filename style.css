@@ -116,9 +116,19 @@ body{
     text-align: center;
 }
 
+#GramMenu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
 #result{
     margin-top: 1px;
     font-weight: bold;
+}
+
+#resultCAL{
+    color:whitesmoke
 }
 
 #CalorieGain{
