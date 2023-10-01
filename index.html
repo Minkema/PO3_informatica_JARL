@@ -249,7 +249,7 @@
           <input type="checkbox" onclick="unhide('cream-p')"> Room
         </div>
         <br>
-        <button type="button" onclick="goCalculator()">Naar Calculator</button>
+        <button type="button" id="GainBut" onclick="goCalculator()">Naar Calculator</button>
       </div>
 
       <!-- from choosing ingredients to calculator -->
@@ -263,57 +263,57 @@
         </div>
         <h3>Proteïnen:</h3>
         <div id="GramMenu">
-          <p style="display: none;" id="pork-p"> Varken: <input type="number" class="calcGain" alt="1.43"></p>
-          <p style="display: none;" id="chicken-p"> Kip: <input type="number" class="calcGain" alt="1.65"></p>
-          <p style="display: none;" id="beef-p"> Rund: <input type="number" class="calcGain" alt="2.5"></p>
-          <p style="display: none;" id="lamb-p"> Lamsvlees: <input type="number" class="calcGain" alt="2.58"></p>
-          <p style="display: none;" id="goat-p"> Geit: <input type="number" class="calcGain" alt="1.43"></p>
-          <p style="display: none;" id="egg-p"> Ei: <input type="number" class="calcGain" alt="1.55"></p>
-          <p style="display: none;" id="rabbit-p"> Konijn: <input type="number" class="calcGain" alt="1.73"></p>
-          <p style="display: none;" id="nut-p"> Noten: <input type="number" class="calcGain" alt="7.5"></p>
-          <p style="display: none;" id="soy-p"> Soja Bonen: <input type="number" class="calcGain" alt="1.87"></p>
+          <p style="display: none;" id="pork-p"> Varken: <br><input type="number" class="calcGain" alt="1.43"></p>
+          <p style="display: none;" id="chicken-p"> Kip: <br><input type="number" class="calcGain" alt="1.65"></p>
+          <p style="display: none;" id="beef-p"> Rund: <br><input type="number" class="calcGain" alt="2.5"></p>
+          <p style="display: none;" id="lamb-p"> Lamsvlees: <br><input type="number" class="calcGain" alt="2.58"></p>
+          <p style="display: none;" id="goat-p"> Geit: <br><input type="number" class="calcGain" alt="1.43"></p>
+          <p style="display: none;" id="egg-p"> Ei: <br><input type="number" class="calcGain" alt="1.55"></p>
+          <p style="display: none;" id="rabbit-p"> Konijn: <br><input type="number" class="calcGain" alt="1.73"></p>
+          <p style="display: none;" id="nut-p"> Noten: <br><input type="number" class="calcGain" alt="7.5"></p>
+          <p style="display: none;" id="soy-p"> Soja Bonen: <br><input type="number" class="calcGain" alt="1.87"></p>
         </div>
         <h3>Groenten:</h3>
         <div id="GramMenu">
-          <p style="display: none;" id="onion-p"> Ui: <input type="number" class="calcGain" alt="0.4"></p>
-          <p style="display: none;" id="cucumber-p"> Komkommer: <input type="number" class="calcGain" alt="0.16"></p>
-          <p style="display: none;" id="cabage-p"> Kool: <input type="number" class="calcGain" alt="0.25"></p>
-          <p style="display: none;" id="aubergine-p"> Aubergine: <input type="number" class="calcGain" alt="0.25"></p>
-          <p style="display: none;" id="carrot-p"> Wortel: <input type="number" class="calcGain" alt="0.41"></p>
-          <p style="display: none;" id="pepper-p"> Paprika: <input type="number" class="calcGain" alt="0.31"></p>
-          <p style="display: none;" id="spinach-p"> Spinazie: <input type="number" class="calcGain" alt="0.23"></p>
-          <p style="display: none;" id="lettuce-p"> Sla: <input type="number" class="calcGain" alt="0.75"></p>
-          <p style="display: none;" id="turnip-p"> Knolraap: <input type="number" class="calcGain" alt="0.28"></p>
+          <p style="display: none;" id="onion-p"> Ui: <br><input type="number" class="calcGain" alt="0.4"></p>
+          <p style="display: none;" id="cucumber-p"> Komkommer: <br><input type="number" class="calcGain" alt="0.16"></p>
+          <p style="display: none;" id="cabage-p"> Kool: <br><input type="number" class="calcGain" alt="0.25"></p>
+          <p style="display: none;" id="aubergine-p"> Aubergine: <br><input type="number" class="calcGain" alt="0.25"></p>
+          <p style="display: none;" id="carrot-p"> Wortel: <br><input type="number" class="calcGain" alt="0.41"></p>
+          <p style="display: none;" id="pepper-p"> Paprika: <br><input type="number" class="calcGain" alt="0.31"></p>
+          <p style="display: none;" id="spinach-p"> Spinazie: <br><input type="number" class="calcGain" alt="0.23"></p>
+          <p style="display: none;" id="lettuce-p"> Sla: <br><input type="number" class="calcGain" alt="0.75"></p>
+          <p style="display: none;" id="turnip-p"> Knolraap: <br><input type="number" class="calcGain" alt="0.28"></p>
         </div>
         <h3>Vruchten:</h3>
         <div id="GramMenu">
-          <p style="display: none;" id="tomato-p"> Tomaat: <input type="number" class="calcGain" alt="0.18"></p>
-          <p style="display: none;" id="banana-p"> Banaan: <input type="number" class="calcGain" alt="0.89"></p>
-          <p style="display: none;" id="watermelon-p"> Watermeloen: <input type="number" class="calcGain" alt="0.3"></p>
-          <p style="display: none;" id="apple-p"> Appel: <input type="number" class="calcGain" alt="0.52"></p>
-          <p style="display: none;" id="grape-p"> Druiven: <input type="number" class="calcGain" alt="0.69"></p>
-          <p style="display: none;" id="orange-p"> Sinaasappel: <input type="number" class="calcGain" alt="0.43"></p>
-          <p style="display: none;" id="mango-p"> Mango: <input type="number" class="calcGain" alt="0.6"></p>
-          <p style="display: none;" id="melon-p"> Meloen: <input type="number" class="calcGain" alt="0.34"></p>
-          <p style="display: none;" id="pineapple-p"> Ananas: <input type="number" class="calcGain" alt="0.5"></p>
+          <p style="display: none;" id="tomato-p"> Tomaat: <br><input type="number" class="calcGain" alt="0.18"></p>
+          <p style="display: none;" id="banana-p"> Banaan: <br><input type="number" class="calcGain" alt="0.89"></p>
+          <p style="display: none;" id="watermelon-p"> Watermeloen: <br><input type="number" class="calcGain" alt="0.3"></p>
+          <p style="display: none;" id="apple-p"> Appel: <br><input type="number" class="calcGain" alt="0.52"></p>
+          <p style="display: none;" id="grape-p"> Druiven: <br><input type="number" class="calcGain" alt="0.69"></p>
+          <p style="display: none;" id="orange-p"> Sinaasappel: <br><input type="number" class="calcGain" alt="0.43"></p>
+          <p style="display: none;" id="mango-p"> Mango: <br><input type="number" class="calcGain" alt="0.6"></p>
+          <p style="display: none;" id="melon-p"> Meloen: <br><input type="number" class="calcGain" alt="0.34"></p>
+          <p style="display: none;" id="pineapple-p"> Ananas: <br><input type="number" class="calcGain" alt="0.5"></p>
         </div>
         <h3>Granen:</h3>
         <div id="GramMenu">
-          <p style="display: none;" id="wheat-p"> Tarwe: <input type="number" class="calcGain" alt="3.39"></p>
-          <p style="display: none;" id="barley-p"> Gerst: <input type="number" class="calcGain" alt="3.54"></p>
-          <p style="display: none;" id="oats-p"> Haver: <input type="number" class="calcGain" alt="3.89"></p>
-          <p style="display: none;" id="quinoa-p"> Quinoa: <input type="number" class="calcGain" alt="1.2"></p>
-          <p style="display: none;" id="rice-p"> Rijst: <input type="number" class="calcGain" alt="1.3"></p>
-          <p style="display: none;" id="rye-p"> Rogge: <input type="number" class="calcGain" alt="3.35"></p>
+          <p style="display: none;" id="wheat-p"> Tarwe: <br><input type="number" class="calcGain" alt="3.39"></p>
+          <p style="display: none;" id="barley-p"> Gerst: <br><input type="number" class="calcGain" alt="3.54"></p>
+          <p style="display: none;" id="oats-p"> Haver: <br><input type="number" class="calcGain" alt="3.89"></p>
+          <p style="display: none;" id="quinoa-p"> Quinoa: <br><input type="number" class="calcGain" alt="1.2"></p>
+          <p style="display: none;" id="rice-p"> Rijst: <br><input type="number" class="calcGain" alt="1.3"></p>
+          <p style="display: none;" id="rye-p"> Rogge: <br><input type="number" class="calcGain" alt="3.35"></p>
         </div>
         <h3>Zuivel:</h3>
         <div id="GramMenu">
-          <p style="display: none;" id="milk-p"> Melk: <input type="number" class="calcGain" alt="0.61"></p>
-          <p style="display: none;" id="yoghurt-p"> Yoghurt: <input type="number" class="calcGain" alt="0.61"></p>
-          <p style="display: none;" id="ice-p"> Ijs: <input type="number" class="calcGain" alt="2.07"></p>
-          <p style="display: none;" id="cheese-p"> Kaas: <input type="number" class="calcGain" alt="4"></p>
-          <p style="display: none;" id="butter-p"> Boter: <input type="number" class="calcGain" alt="7.17"></p>
-          <p style="display: none;" id="cream-p"> Room: <input type="number" class="calcGain" alt="3.45"></p>
+          <p style="display: none;" id="milk-p"> Melk: <br><input type="number" class="calcGain" alt="0.61"></p>
+          <p style="display: none;" id="yoghurt-p"> Yoghurt: <br><input type="number" class="calcGain" alt="0.61"></p>
+          <p style="display: none;" id="ice-p"> Ijs: <br><input type="number" class="calcGain" alt="2.07"></p>
+          <p style="display: none;" id="cheese-p"> Kaas: <br><input type="number" class="calcGain" alt="4"></p>
+          <p style="display: none;" id="butter-p"> Boter: <br><input type="number" class="calcGain" alt="7.17"></p>
+          <p style="display: none;" id="cream-p"> Room: <br><input type="number" class="calcGain" alt="3.45"></p>
 
         </div>
         <button id="GainBut" type="button" onclick="CalcGain()">Bereken</button>
